@@ -1,0 +1,160 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: Honeydew;
+}
+li {
+    list-style-type: none;
+}
+h3 {
+	font-size: 80%;
+
+}
+p {
+	margin-top: 5px;
+	font-size: 60%;
+}
+.name-product {
+	font-size: 100%;
+}
+.name-product-additional {
+	font-size: 60%;
+}
+.container {
+	display: flex;
+	margin-left: 50px;
+	margin-top: 50px; 
+}
+.box-foto-description {
+	display: flex;
+}
+.box-foto {
+	background: #37b0ae;
+	position: relative;
+	min-width: 250px;
+	height: 300px;
+	margin-top: 20px;
+}
+.title-product {
+	font-size: 120%;
+	color: white;
+	margin-left: 20px;
+}
+.big-foto {
+	height: 220px;
+	width: 220px;
+	position: absolute;
+	left: -20px;
+	top: 50px;
+}
+.main-shadof {
+	height: 100px;
+	width: 100px;
+}
+.shadow-foto {
+	height: 100px;
+	position: absolute;
+	bottom: 0px;
+	right: 30px;
+}
+.foto-1, .foto-2 {
+	background-color: Ivory;
+	background: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	height: 80px;
+	width: 80px;
+}
+.foto1, .foto2 {
+	height: 80px;
+	width: 80px;
+}
+.foto-1 {
+	top: 60px;
+	right: -20px;
+}
+.foto-2 {
+	bottom: 60px;
+	right: -20px;
+}
+.description {
+	width: 280px;
+	height: 340px;
+	background: white;
+	font-family: 'Roboto', sans-serif;
+	color: DarkSlateGray;
+}
+.header {
+	padding-top: 20px;
+	padding-left: 40px;
+}
+.characteristic {
+	padding-top: 20px;
+	font-size: 80%;
+}
+.list {
+	display: flex;
+}
+.box-list-marker {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.list-marker {
+	background-color: #37b0ae;
+	color: #37b0ae;
+	width: 5px;
+	height: 5px;
+	margin-top: 5px;
+}
+.box-list-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 10px;
+}
+.list-text {
+	margin-top: 5px;
+}
+
+.delivery {
+	font-size: 60%;
+	margin-top: 20px;
+	display: flex;
+}
+.shipping, .reviews {
+	padding-left: 20px;
+}
+.quantity {
+	margin-top: 5px;
+	display: flex;
+}
+.price {
+	margin-top: 10px;
+}
+.square {
+	margin-top: 5px;
+	border: 1px solid DarkSlateGray;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+}
+.but {
+	margin-top: 5px;
+}
+.cart, .wish {
+	width: 110px;
+	height: 30px;
+	font-size: 70%;
+}
+.cart {
+	background-color: #37b0ae;
+	color: white;
+}
+.wish {
+	background-color: white;
+	margin-left: 5px;
+	color: DarkSlateGray;
+}
