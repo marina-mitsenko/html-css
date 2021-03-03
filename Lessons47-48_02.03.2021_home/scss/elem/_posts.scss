@@ -1,0 +1,11 @@
+.posts {
+    $postsItemWidht: 170px;
+    @include flex(center, flex-end);
+    height: 200px;
+    border: $postsBorder;
+    &__item {
+        @include circle( $postsItemWidht, $postsItemBg);
+        @include flex( );
+        margin: 5px;
+    }
+}

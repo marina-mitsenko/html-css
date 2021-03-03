@@ -1,0 +1,9 @@
+.posts {
+	@include flex();
+	height: 200px;
+	border: $postsB;
+	&__item {
+		margin: 5px;
+		@include circle();
+	}
+}

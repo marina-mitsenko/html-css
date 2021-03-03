@@ -1,0 +1,16 @@
+@mixin flex($jc:center, $ai:center) {
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+}
+@mixin square ($w: 100px, $bg: silver) {
+	width: $w;
+	height: $w;
+	background: $bg;
+}
+@mixin circle($wh: 70px, $bg: yellow) {
+	border-radius: 50%;
+	background: $bg;
+	width: $wh;
+	height: $wh;
+}

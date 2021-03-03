@@ -1,0 +1,11 @@
+.box {
+    $boxItemWidht: 200px;
+    @include flex();
+    height: 300px;
+    border: $boxBorder;
+    &__item {
+        @include square($boxItemWidht, $boxItemBg);
+        @include flex( );
+        margin: 10px;
+    }
+}

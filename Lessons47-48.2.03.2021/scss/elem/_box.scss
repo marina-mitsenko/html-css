@@ -1,0 +1,10 @@
+.box {
+	@include flex(flex-start, flex-end);
+	height: 300px;
+	border: $boxBorder;
+	background: chartreuse;
+	&__item {
+		@include square ();
+		margin: 50px;
+	}
+}
