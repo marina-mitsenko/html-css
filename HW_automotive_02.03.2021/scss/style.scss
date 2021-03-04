@@ -1,0 +1,141 @@
+@mixin Flex($jc: space-between, $ai: center, $fd: row) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+@font-face {
+	font-family: 'QuiteChocolatey';
+	src: url('../fonts/QuiteChocolatey/QuiteChocolatey.eot');
+	src: local('☺'), 
+    url('../fonts/QuiteChocolatey/QuiteChocolatey.woff') 
+    format('woff'), 
+    url('../fonts/QuiteChocolatey/QuiteChocolatey.ttf') 
+    format('truetype'), 
+    url('../fonts/QuiteChocolatey/QuiteChocolatey.svg') 
+    format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.headerFormSaleoffer {
+    background-image: url(../img/Layer13.png);
+}
+.container {
+    margin: 0 auto;
+    max-width: 1010px;
+}
+.header {
+    @include Flex(); 
+    color: blanchedalmond;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    &__menu {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+    }
+}
+
+.logo__tittel {
+    font-family: 'QuiteChocolatey';
+    font-size: 88px;
+}
+
+.menu {
+    @include Flex(); 
+    &__item {
+        margin-right: 20px;
+        width: 90px;
+        height: 40px;
+        @include Flex();
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+    &__item:hover {
+        background-color: black;
+    }
+}
+.FormSale {
+    height: 540px;
+    @include Flex();
+}
+.Sale {
+    min-width: 550px;
+    min-height: 300px;
+    color: blanchedalmond;
+    @include Flex($jc: center, $ai: center, $fd: column);
+    font-family: 'Montserrat', sans-serif;
+    
+    &__saleyour {
+        font-weight: bold;
+        font-size: 90px;
+    }
+    &__carnow {
+        font-weight: bold;
+        font-size: 90px;
+        color: black;
+    }
+    &__content {
+        padding-top: 40px;
+        font-family: 'PT Serif', serif;
+        font-size: 20px;
+    }
+
+}
+.form {
+    @include Flex($jc: center, $ai: center, $fd: column);
+    min-width: 400px;
+    min-height: 525px;
+    background: white;
+    border-radius: 1%;
+    border: 1px solid white;
+    margin-left: 100px;
+    margin-top: 100px;
+    box-shadow: 0 0 35px rgba(0,0,0,0.5);
+    &__request {
+        height: 90px;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+    }
+    &__input {
+        min-width: 350px;
+        min-height: 60px;
+        background: #eeeeee;
+        border: none;
+        border-radius: 1%;
+        margin-bottom: 15px;
+        font-family: 'PT Serif', serif;
+        font-size: 20px;
+        color: #d3d3d3;
+    }
+    &__send {
+        min-width: 350px;
+        min-height: 60px;
+        margin-bottom: 15px;
+        background: #c62314;
+        border-radius: 1%;
+        color: white;
+        font-family: 'PT Serif', serif;
+        font-size: 22px;
+    }
+    &__question {
+        height: 60px;
+        font-family: 'PT Serif', serif;
+        font-size: 20px;
+    }
+}
