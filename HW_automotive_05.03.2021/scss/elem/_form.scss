@@ -27,12 +27,7 @@
         font-size: 20px;
         color: #d3d3d3;
     }
-    &__send {
-        min-width: 350px;
-        min-height: 60px;
-        background: $firstColor;
-        @include button ();
-    }
+   
     &__question {
         height: 60px;
         font-family: 'PT Serif', serif;

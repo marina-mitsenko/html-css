@@ -1,0 +1,9 @@
+.ourstory {
+    background: $secondColor;
+    height: 120px;
+    &__content {
+        @include Flex ();
+        color: white;
+        @include font-p-content()
+    }
+}

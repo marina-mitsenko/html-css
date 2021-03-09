@@ -2,25 +2,13 @@
 @import "./var";
 @import "./fonts";
 @import './mixins';
+@import "./elem/btn";
 @import "./elem/headerForm";
 @import "./elem/servise";
+@import "./elem/ourstory";
 @import "./normalize";
 @import "./elem/form";
 @import "./elem/pricing";
 @import "./elem/testimonialgallery";
 
-.ourstory {
-    background: $secondColor;
-    height: 120px;
-    &__content {
-        @include Flex ();
-        color: white;
-        @include font-p-content()
-    }
-    &__button {
-        @include button();
-        min-width: 270px;
-        min-height: 70px;
-        background: $firstColor;
-    }
-}
+

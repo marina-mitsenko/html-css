@@ -1,6 +1,9 @@
 .pricing {
     min-height: 540px;
     background: #d3d3d3;
+    &__content {
+        padding-bottom: 50px;
+    }
     &__blocks {
         @include Flex();
     }
@@ -30,13 +33,7 @@
     &__servise {
         @include font-p-content()
     }
-    &__button {
-        @include button();
-        min-width: 200px;
-        min-height: 55px;
-        background: $secondColor;
-        margin-top: 30px;
-    }
+   
 }
 .active {
     background: $firstColor;

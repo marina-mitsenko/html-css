@@ -1,0 +1,19 @@
+.form__send {
+    min-width: 350px;
+    min-height: 60px;
+    background: $firstColor;
+    @include button ();
+}
+.ourstory__button {
+    @include button();
+    min-width: 270px;
+    min-height: 70px;
+    background: $firstColor;
+}
+.pricing__button {
+    @include button();
+    min-width: 200px;
+    min-height: 55px;
+    background: $secondColor;
+    margin-top: 30px;
+}
