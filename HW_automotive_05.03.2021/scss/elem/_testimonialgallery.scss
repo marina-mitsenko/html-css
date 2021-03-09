@@ -1,0 +1,40 @@
+.testimonialgallery {
+    height: 600px;
+    background: white;
+    &__content {
+        margin-top: 150px;
+    }
+    &__tittel {
+        @include Flex();
+    }
+    &__titteltestimonial {
+        @include BigTittel;
+        color: $secondColor;
+    }
+    &__tittelgallery {
+        @include BigTittel;
+        color: $firstColor;
+    }
+    &__blocks {
+        @include Flex();
+        margin-top: 60px;
+    }
+    &__block {
+        height: 150px;
+        width: 500px;
+        @include Flex();
+        flex-wrap: wrap;
+    }
+    
+}
+.gallery {
+    width: 400px;
+    height: 330px;
+    &__fotoblock {
+        @include Flex ();
+        flex-wrap: wrap;
+    }
+    &__foto {
+        width: calc((100% - 5px * 2 * 3) / 3);
+    }
+}

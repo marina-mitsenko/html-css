@@ -4,6 +4,12 @@
     align-items: $ai;
     flex-direction: $fd;
 }
+@mixin BigTittel {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 20px;
+}
 @mixin font-p-content() {
     font-family: 'PT Serif', serif;
     font-size: 20px;
