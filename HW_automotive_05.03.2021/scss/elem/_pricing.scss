@@ -1,0 +1,63 @@
+.pricing {
+    min-height: 540px;
+    background: #d3d3d3;
+    &__blocks {
+        @include Flex();
+    }
+    &__tittel {
+        min-height: 120px;
+        @include Flex(center, center, row); 
+    }
+    &__tittelpricing {
+        color: $secondColor;
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    &__block {
+        @include Flex( center, center, column );
+        min-height: 400px;
+        min-width: 320px;
+        margin-right: 20px;
+        text-align: center;
+        color: $secondColor;
+        background: white;
+        position: relative;
+    }
+    &__block:last-child {
+        margin-right: 0;
+    }
+    &__servise {
+        @include font-p-content()
+    }
+    &__button {
+        @include button();
+        min-width: 200px;
+        min-height: 55px;
+        background: $secondColor;
+        margin-top: 30px;
+    }
+}
+.active {
+    background: $firstColor;
+}
+.view {
+    @include font-p-content();
+    margin-top: 30px;
+}
+.price {
+    color: $firstColor;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.triangle {
+    border: 50px solid transparent; 
+    border-left: 50px solid $firstColor; 
+    border-top: 50px solid $firstColor;
+    position: absolute;
+    left: 0;
+    top: 0;   
+}

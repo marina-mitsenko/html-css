@@ -1,0 +1,40 @@
+.servise {
+    min-height: 480px;
+    background: #d3d3d3;
+    &__blocks {
+        @include Flex();
+    }
+    &__tittel {
+        min-height: 120px;
+        @include Flex( start, center, row );
+        
+    }
+    &__tittelour {
+        color: $firstColor;
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    &__tittelservices {
+        color: $secondColor;
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    &__block {
+        @include Flex( center, center, column );
+        min-height: 350px;
+        margin-right: 100px;
+        text-align: center;
+        color: $secondColor;
+    }
+    &__block:last-child {
+        margin-right: 0;
+    }
+    &__form {
+        padding-top: 40px;
+        @include font-p-content()
+    }
+}

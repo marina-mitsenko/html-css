@@ -1,0 +1,76 @@
+.headerFormSale {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($firstColor, $overlayopacity);
+    }
+}
+
+.header {
+    @include Flex(); 
+    color: blanchedalmond;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: relative;
+    &__menu {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+    }
+}
+
+.logo__tittel {
+    font-family: 'QuiteChocolatey';
+    font-size: 88px;
+}
+
+.menu {
+    @include Flex(); 
+    &__item {
+        margin-right: 20px;
+        width: 90px;
+        height: 40px;
+        @include Flex();
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+    &__item:hover {
+        background-color: $secondColor;
+    }
+}
+.FormSale {
+    height: 540px;
+    @include Flex();
+    position: relative;
+}
+.Sale {
+    min-width: 550px;
+    min-height: 300px;
+    color: blanchedalmond;
+    @include Flex($jc: center, $ai: center, $fd: column);
+    font-family: 'Montserrat', sans-serif;
+    
+    &__saleyour {
+        font-weight: bold;
+        font-size: 90px;
+    }
+    &__carnow {
+        font-weight: bold;
+        font-size: 90px;
+        color: $secondColor;
+    }
+    &__content {
+        padding-top: 40px;
+        @include font-p-content()
+    }
+
+}

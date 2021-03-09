@@ -1,0 +1,17 @@
+@mixin Flex($jc: space-between, $ai: center, $fd: row) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+@mixin font-p-content() {
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+}
+@mixin button () {
+    border-radius: 1%;
+    margin-bottom: 15px;
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 22px;
+} 

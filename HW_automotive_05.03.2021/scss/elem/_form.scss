@@ -1,0 +1,41 @@
+.form {
+    @include Flex($jc: center, $ai: center, $fd: column);
+    width: 400px;
+    min-height: 525px;
+    background: white;
+    border-radius: 1%;
+    border: 1px solid white;
+    margin-left: 100px;
+    margin-top: 100px;
+    box-shadow: 0 0 100px rgba(19, 18, 18, 0.801);
+    &__request {
+        height: 90px;
+        color: $secondColor;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+    }
+    &__input {
+        min-width: 350px;
+        min-height: 60px;
+        background: #eeeeee;
+        border: none;
+        border-radius: 1%;
+        margin-bottom: 15px;
+        font-family: 'PT Serif', serif;
+        font-size: 20px;
+        color: #d3d3d3;
+    }
+    &__send {
+        min-width: 350px;
+        min-height: 60px;
+        background: $firstColor;
+        @include button ();
+    }
+    &__question {
+        height: 60px;
+        font-family: 'PT Serif', serif;
+        font-size: 20px;
+    }
+}
