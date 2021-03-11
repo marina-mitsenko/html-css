@@ -1,0 +1,39 @@
+
+.Sale {
+    min-width: 550px;
+    min-height: 300px;
+    color: blanchedalmond;
+    @include Flex($jc: center, $ai: center, $fd: column);
+    font-family: 'Montserrat', sans-serif;
+    @media (max-width: 900px) {
+        min-width: initial;
+      }
+    
+    
+    &__saleyour {
+        font-weight: bold;
+        font-size: 90px;
+        @media (max-width: 900px) {
+            font-size: 60px;
+        }
+        @media (max-width: 768px) {
+            font-size: 50px;
+        }
+    }
+    &__carnow {
+        font-weight: bold;
+        font-size: 90px;
+        color: $secondColor;
+        @media (max-width: 900px) {
+            font-size: 60px;
+        }
+        @media (max-width: 768px) {
+            font-size: 50px;
+        }
+    }
+    &__content {
+        padding-top: 40px;
+        @include font-p-content()
+    }
+
+}

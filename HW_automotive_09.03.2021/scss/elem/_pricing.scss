@@ -1,0 +1,81 @@
+.pricing {
+    min-height: 540px;
+    background: #d3d3d3;
+    @media (max-width: 768px) {
+        min-height: 480px;
+    }
+    &__content {
+        padding-bottom: 50px;
+    }
+    &__blocks {
+        @include Flex();
+    }
+    &__tittel {
+        min-height: 120px;
+        @include Flex(center, center, row); 
+        @media (max-width: 768px) {
+            min-height: 60px;
+        }
+    }
+    &__tittelpricing {
+        color: $secondColor;
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    &__block {
+        @include Flex( center, center, column );
+        min-height: 400px;
+        min-width: 320px;
+        margin-right: 20px;
+        text-align: center;
+        color: $secondColor;
+        background: white;
+        position: relative;
+        border-radius: 5px;
+        @media (max-width: 1099px) {
+            min-width: 30%;
+          }
+        @media (max-width: 768px) {
+            min-height: 370px;
+        }
+        
+    }
+    &__block:last-child {
+        margin-right: 0;
+    }
+    &__servise {
+        @include font-p-content()
+    }
+   
+}
+.active {
+    background: $firstColor;
+}
+.view {
+    @include font-p-content();
+    margin-top: 30px;
+    @media (max-width: 768px) {
+        margin-top: 5px;
+    }
+}
+.price {
+    color: $firstColor;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    @media (max-width: 768px) {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+.triangle {
+    border: 50px solid transparent; 
+    border-left: 50px solid $firstColor; 
+    border-top: 50px solid $firstColor;
+    position: absolute;
+    left: 0;
+    top: 0;   
+}

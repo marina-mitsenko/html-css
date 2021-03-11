@@ -1,0 +1,78 @@
+
+.header {
+    @include Flex(); 
+    color: blanchedalmond;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: relative;
+    @media (max-width: 900px) {
+        padding-bottom: 0;
+        }
+    &__menu {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+    }
+}
+
+.logo__tittel {
+    font-family: 'QuiteChocolatey';
+    font-size: 88px;
+    @media (max-width: 900px) {
+        font-size: 68px;
+        }
+     @media (max-width: 768px) {
+        font-size: 50px;
+        }
+}
+.menu:hover {
+    @media (max-width: 1000px) {
+        height: 100%;
+        overflow: initial;
+        }
+}
+
+.menu {
+    @include Flex();
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        height: 25px;
+        overflow: hidden;
+      }
+    &__item, &__link {
+        margin-right: 20px;
+        min-width: 90px;
+        height: 40px;
+        font-size: 18px;
+        font-family: MontserratRegular;
+        @include Flex(center, center);
+        color: blanchedalmond;
+        @media (max-width: 1000px) {
+            margin-right: initial;
+            height: 25px;
+            }
+       
+    }
+    &__item:last-child {
+        margin-right: 0;
+       
+    }
+    &__item:hover, &__link:hover {
+        background-color: $secondColor;
+        border-radius: 5px;
+    }
+    &__item:first-child {
+        display: none;
+        @media (max-width: 1000px) {
+            display: initial;
+          }
+    }
+    
+}
+.aktive {
+    background-color: $secondColor;
+    border-radius: 5px;
+    @media (max-width: 1000px) {
+        background-color: initial;
+        border-radius: none;
+      }
+}

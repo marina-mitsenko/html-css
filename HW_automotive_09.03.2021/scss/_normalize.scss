@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1010px;
+    @media (max-width: 1099px) {
+        max-width: none;
+        padding: 0 30px;
+      }
+}

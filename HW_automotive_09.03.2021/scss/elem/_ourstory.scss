@@ -1,0 +1,12 @@
+.ourstory {
+    background: $secondColor;
+    height: 120px;
+    @media (max-width: 768px) {
+        height: initial;
+    }
+    &__content {
+        @include Flex (center, center);
+        color: white;
+        @include font-p-content()
+    }
+}

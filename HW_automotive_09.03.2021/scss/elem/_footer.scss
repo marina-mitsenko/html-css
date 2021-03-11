@@ -1,0 +1,35 @@
+.footer {
+    background: $secondColor;
+    height: 185px;
+    @include Flex(initial, center, initial);
+    @media (max-width: 768px) {
+        height: initial;
+    }
+    
+    &__content {
+        @include Flex();
+    }
+    &__signature {
+        @include Flex (flex-start, center, row);
+    }
+    &__text {
+        color: white;
+        @include font-p-content();
+    }
+    &__text:last-child {
+        color: $firstColor;
+    }
+    &__text:nth-child(2) {
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        margin: 0 10px;
+    }
+    &__logo {
+        font-family: 'QuiteChocolatey';
+        font-size: 65px;
+        color: $firstColor;
+        @media (max-width: 768px) {
+            font-size: 45px;
+        }
+    }
+}
