@@ -194,6 +194,13 @@
   .menu:hover {
     height: 100%;
     overflow: initial;
+    position: relative;
+    top: -30px;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: -webkit-transform 0.8s;
+    -o-transition: transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
   }
 }
 
@@ -279,7 +286,16 @@
 @media (max-width: 1000px) {
   .menu__item:first-child {
     display: initial;
+    background-color: #130e27;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
   }
+}
+
+.menu__i {
+  font-size: 20px;
+  margin-left: 5px;
+  color: #c62314;
 }
 
 .aktive {
