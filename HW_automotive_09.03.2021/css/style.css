@@ -847,15 +847,15 @@ li {
   background: white;
 }
 
-.testimonialgallery__content {
-  margin-top: 150px;
-}
-
 @media (max-width: 768px) {
-  .testimonialgallery__content {
+  .testimonialgallery {
     margin-top: 20px;
     height: initial;
   }
+}
+
+.testimonialgallery__content {
+  margin-top: 150px;
 }
 
 .testimonialgallery__tittel {
@@ -911,7 +911,6 @@ li {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 60px;
 }
 
 @media (max-width: 768px) {

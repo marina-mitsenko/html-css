@@ -1,13 +1,15 @@
 .testimonialgallery {
     height: 600px;
     background: white;
+    @media (max-width: 768px) {
+        margin-top: 20px;
+        height: initial;
+    }
+
     &__content {
         margin-top: 150px;
-        @media (max-width: 768px) {
-            margin-top: 20px;
-            height: initial;
-        }
     }
+     
     &__tittel {
         @include Flex(space-around, center);
     }
@@ -21,7 +23,6 @@
     }
     &__blocks {
         @include Flex();
-        margin-top: 60px;
         @media (max-width: 768px) {
             flex-direction: column;
             margin-top: 10px;
