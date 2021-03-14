@@ -1,0 +1,31 @@
+@mixin Flex($jc: space-between, $ai: center, $fd: row) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+@mixin BigTittel {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+@mixin font-p-content() {
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+@mixin button () {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: all 0.2s linear;
+    display: block;
+} 

@@ -1,0 +1,123 @@
+
+.header {
+    @include Flex(); 
+    color: blanchedalmond;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: relative;
+   
+    &__menu {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__toggle-menu {
+        display: none;
+        $lineWidth: 30px;
+        $lineHeight: 3px;
+        $lineMargin: 5px;
+        $lineColor: $secondColor;
+
+        &::before, &::after {
+                content: '';
+                display: block;
+                width: $lineWidth;
+                height: $lineHeight;
+                background: $lineColor;
+        }
+            
+        span {
+            display: block;
+            width: $lineWidth;
+            height: $lineHeight;
+            margin: $lineMargin 0;
+            background: $lineColor;
+        }
+    }
+}
+
+.logo__tittel {
+    font-family: 'QuiteChocolatey';
+    font-size: 88px;
+    @media (max-width: 900px) {
+        font-size: 68px;
+        }
+     @media (max-width: 768px) {
+        font-size: 50px;
+        }
+}
+
+.menu {
+    @include Flex();
+    &__item {
+        margin-right: 20px;
+    }
+   
+    &__link {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: MontserratRegular;
+        color: blanchedalmond;
+    }
+    &__item:last-child {
+        margin-right: 0;
+       
+    }
+    &__link:hover {
+        background-color: $secondColor;
+        border-radius: 5px;
+        padding: 10px 15px;
+       
+    }
+    &__item:hover {
+        margin-right: 0;
+    }
+    
+}
+.aktive {
+    background-color: $secondColor;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+@media (max-width:900px) {
+    .header__menu {
+        position: relative;
+    }
+    .header__menu:hover {
+        .menu {
+            z-index: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+    }
+    .header__toggle-menu {
+        display: block;
+    }
+
+   
+   .menu {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    transform: scale(0);
+    transition: transform .3s;
+    top: 27px;
+    right: 0px;
+    width: 350px;
+    height: 100vh;
+    border-radius: 5%;
+    background: rgba($color: #000000, $alpha: .5);
+    }
+    .menu__link {
+        padding-left: 15px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .aktive {
+        background-color: initial;
+        padding: 0 15px;
+    }
+}

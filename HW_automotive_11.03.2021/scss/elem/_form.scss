@@ -1,0 +1,58 @@
+.form {
+    @include Flex($jc: center, $ai: center, $fd: column);
+    width: 400px;
+    min-height: 525px;
+    padding: 20px;
+    background: white;
+    border-radius: 1%;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(19, 18, 18, 0.801);
+    position: relative;
+    bottom: -50px;
+    right: -50px;
+    @media (max-width: 1000px) {
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        min-height: 425px;
+        }
+    @media (max-width: 768px) {
+        width: 70%;
+        min-height: 370px;
+        margin-bottom: 50px;
+        }
+
+    &__request {
+        padding: 30px 0;
+        color: $secondColor;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+    }
+    &__input {
+        min-width: 350px;
+        min-height: 60px;
+        background: #eeeeee;
+        border: none;
+        border-radius: 1%;
+        margin-bottom: 15px;
+        font-family: 'PT Serif', serif;
+        font-size: 20px;
+        color: #d3d3d3;
+        @media (max-width: 1000px) {
+            min-width: 80%;
+            min-height: 30px;
+        }
+    }
+   
+    &__question {
+        height: 60px;
+        font-family: 'PT Serif', serif;
+        font-size: 20px;
+        @media (max-width: 768px) {
+          font-size: 15px;
+          height: 30px;
+        }
+    }
+}
