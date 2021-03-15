@@ -1,5 +1,4 @@
 .testimonialgallery {
-    height: 600px;
     background: white;
     @media (max-width: 768px) {
         margin-top: 20px;
@@ -8,10 +7,17 @@
 
     &__content {
         margin-top: 150px;
+        margin-bottom: 120px;
+        @media (max-width: 768px) {
+            margin: 50px 0;
+        }
     }
      
     &__tittel {
         @include Flex(space-around, center);
+        @media (max-width: 615px) {
+            flex-direction: column;
+        }
     }
     &__titteltestimonial {
         @include BigTittel;
@@ -28,6 +34,11 @@
             margin-top: 10px;
         }
     }
+    &__testimonial {
+        @media (max-width: 700px) {
+            display: flex;
+        }
+    }
     &__block {
         width: 500px;
         @include Flex();
@@ -41,13 +52,20 @@
             width: initial;
             margin-top: 10px;
         }
+        @media (max-width: 700px) {
+            flex-wrap: wrap;
+            width: 45%;
+            justify-content: center;
+        }
     }
 }
 .comment, .comment-author {
-    padding-left: 20px;
     width: 300px;
     @include font-p-content();
     padding: 20px 0 20px 20px;
+    @media (max-width: 700px) {
+        width: 100%;
+    }
 }
 .comment-author {
     font-weight: bold;
@@ -56,11 +74,17 @@
 .comment-foto {
     position: absolute;
     right: 0;
+    @media (max-width: 700px) {
+        position: relative;
+    }
 }
 .gallery {
     width: 400px;
     height: 330px;
     @include Flex(center, center, column);
+    @media (max-width: 1000px) {
+        height: initial;
+    }
     @media (max-width: 768px) {
         width: 100%;
         height: 100%;
@@ -72,8 +96,11 @@
     }
     &__foto {
         width: calc((100% - 5px * 2 * 3) / 3);
+        @media (max-width: 1000px) {
+            width: calc((100% - 5px * 2 * 2) / 2);
+        }
         @media (max-width: 768px) {
-           width: initial;
+           width: 100px;
         }
     }
 

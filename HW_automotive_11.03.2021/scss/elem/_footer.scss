@@ -1,6 +1,5 @@
 .footer {
-    background: $secondColor;
-    
+    background: $secondColor; 
     padding: 20px 0;
     @media (max-width: 768px) {
         height: initial;
@@ -13,10 +12,17 @@
     }
     &__signature {
         @include Flex (flex-start, center, row);
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__text {
         color: white;
         @include font-p-content();
+        @media (max-width: 1000px) {
+            font-size: 14px;
+        }
     }
     &__text:last-child {
         color: $firstColor;
@@ -30,8 +36,11 @@
         font-family: 'QuiteChocolatey';
         font-size: 65px;
         color: $firstColor;
+        @media (max-width: 1000px) {
+            font-size: 50px;
+        }
         @media (max-width: 768px) {
-            font-size: 45px;
+            font-size: 35px;
         }
     }
 }

@@ -15,12 +15,17 @@
         right: 0;
         width: 300px;
         min-height: 425px;
-        }
+    }
     @media (max-width: 768px) {
         width: 70%;
         min-height: 370px;
         margin-bottom: 50px;
-        }
+    }
+    @media (max-width: 370px) {
+        width: 80%;
+        margin-bottom: 40px;
+        min-height: initial;
+    }
 
     &__request {
         padding: 30px 0;
@@ -29,6 +34,10 @@
         font-size: 22px;
         display: flex;
         align-items: center;
+        @media (max-width: 370px) {
+           padding: 10px 0;
+           font-size: 16px;
+        }
     }
     &__input {
         min-width: 350px;
@@ -53,6 +62,9 @@
         @media (max-width: 768px) {
           font-size: 15px;
           height: 30px;
+        }
+        @media (max-width: 370px) {
+            height: initial;
         }
     }
 }

@@ -5,10 +5,16 @@
         min-height: 480px;
     }
     &__content {
-        padding-bottom: 50px;
+        padding: 50px 0;
+        @media (max-width: 370px) {
+            padding: 20px 0;
+        }
     }
     &__blocks {
         @include Flex();
+        @media (max-width: 615px) {
+            flex-direction: column;
+        }
     }
     &__tittel {
         min-height: 120px;
@@ -22,6 +28,9 @@
         font-family: 'Roboto', sans-serif;
         font-size: 50px;
         font-weight: bold;
+        @media (max-width: 370px) {
+        font-size: 40px;
+        }
     }
     &__block {
         @include Flex( center, center, column );
@@ -38,6 +47,12 @@
           }
         @media (max-width: 768px) {
             min-height: 370px;
+        }
+        @media (max-width: 615px) {
+            min-height: max-content;
+            width: 70%;
+            margin-bottom: 10px;
+            margin-right: 0;
         }
         
     }
@@ -70,6 +85,9 @@
         margin-top: 5px;
         margin-bottom: 5px;
     }
+    @media (max-width: 370px) {
+        font-size: 50px;
+    }
 }
 .triangle {
     border: 50px solid transparent; 
@@ -77,5 +95,10 @@
     border-top: 50px solid $firstColor;
     position: absolute;
     left: 0;
-    top: 0;   
+    top: 0;
+    @media (max-width: 370px) {
+        border: 20px solid transparent; 
+        border-left: 20px solid $firstColor; 
+        border-top: 20px solid $firstColor;
+    }
 }

@@ -5,10 +5,14 @@
     @include button ();
     @media (max-width: 1000px) {
         min-width: 80%;
-        }
+    }
     @media (max-width: 768px) {
         min-height: 40px;  
-        }
+    }
+    @media (max-width: 370px) {
+       min-height: 20%;
+       margin: 0;
+    }
     
 }
 .ourstory__button {
@@ -20,6 +24,11 @@
         min-width: 200px;
         min-height: 45px;
     }
+    @media (max-width: 370px) {
+        min-width: 55px;
+        height: 90px;
+        font-size: 16px;
+    } 
 }
 .pricing__button {
     @include button();
