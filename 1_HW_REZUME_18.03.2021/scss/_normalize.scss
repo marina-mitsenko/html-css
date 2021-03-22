@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+i {
+    color: white;
+    font-size: 50px;
+    background: green;
+    padding-left: 20px;
+}
+input {
+    border: 1px solid green;
+   
+}
+span {
+    padding-top: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1010px;
+}

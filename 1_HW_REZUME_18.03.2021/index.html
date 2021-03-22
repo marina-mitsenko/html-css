@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html Lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML/CSS</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="tittel">
+				<h2 class="tittel__data">ОСОБИСТІ ДАНІ</h2>
+			</div>
+			<div class="personaldata">
+				<div class="personaldata__privat">
+					<i class="fas fa-address-card"></i>
+				</div>
+				<div class="personaldata__experience">
+					<i class="fas fa-book-open"></i>
+				</div>
+				<div class="personaldata__template">
+					<i class="fas fa-pen"></i>
+				</div>
+			</div>
+		</div>
+		
+		<form class="form" action="#" method="GET">
+				<div class="data">
+					<div class="data__foto">
+						<span class="form__span">Фото*</span>
+						<input class="form__input userFoto" type="text" name="name" placeholder="Додати фото">
+						<span class="form__span">Адреса електронної пошти*</span>
+						<input class="form__input userEmail" type="email" name="email" placeholder="Email Adress">
+					</div>
+					<div class="data__name">
+						<span class="form__span ">Імя*</span>
+						<input class="form__input userName" type="text" name="name" placeholder="Fist Name">
+						<span class="form__span">Прізвище*</span>
+						<input class="form__input userLastName" type="text" name="name" placeholder="Last Name">
+						<span class="form__span">Номер телефону</span>
+						<input class="form__input userPhone" type="number" name="number" placeholder="Phone Number">
+					</div>
+				</div>
+				<div class="adress">
+					<span class="form__span">Адреса</span>
+					<input class="form__input userAdress" type="text" name="name" placeholder="Adress">
+					<span class="form__span">Індекс</span>
+					<input class="form__input userNumber" type="number" name="number" placeholder="Number">
+					<span class="form__span">Місто</span>
+					<input class="form__input userSiti" type="text" name="name" placeholder="Siti">
+				</div>
+		</form>
+	</div>
+	<script src="./js/main.js"></script>
+</body>
+</html>
+
