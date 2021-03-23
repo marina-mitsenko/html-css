@@ -37,3 +37,6 @@ let userEmail = document.querySelector('.userEmail');
 let email = prompt('Укажи свой Email адрес');
 userEmail.placeholder = email;
 
+ 
+let tittel = document.querySelector('.tittel__data');
+tittel.innerHTML = fistName + ' ' + lastName;
