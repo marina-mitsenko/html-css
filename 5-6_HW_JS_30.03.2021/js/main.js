@@ -25,6 +25,9 @@ let blok5 = doc.querySelector('.blok5');
 let data = ['Омлет', 'Бутерброд', 'Гамбургер', 'Чисбургер', 'Пюрешка'];
 console.log(data, typeof data);
 
+confirm('Названия блоков будут такие: Омлет, Бутерброд, Гамбургер, Чисбургер, Пюрешка');
+confirm('И срабатывает вставка блока только если написать их в таком порядке');
+
 ingredientList(resipe1, data, blok1);
 ingredientList(resipe2, data, blok2);
 ingredientList(resipe3, data, blok3);
