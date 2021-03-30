@@ -39,6 +39,7 @@ ingredientList(resipe5, data, blok5);
         let userAn = prompt('Введите название рецепта который хотите увидеть');
         console.log(userAn);
         //let incorrect = '<div>' + '<h2>такого блока не существует</h2>' + '</div>';
+        
         let List = '';
 
         for (let i = 0; i < resipe.length; i++ ) {
