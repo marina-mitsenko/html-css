@@ -39,8 +39,8 @@ img {
   margin: 0 auto;
 }
 
-h1, h2 {
-  padding: 20px;
+h1, h2, h3 {
+  margin: 20px;
 }
 
 p {

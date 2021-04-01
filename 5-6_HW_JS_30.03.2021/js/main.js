@@ -22,65 +22,62 @@ let blok3 = doc.querySelector('.blok3');
 let blok4 = doc.querySelector('.blok4');
 let blok5 = doc.querySelector('.blok5');
 
-let data = ['Омлет', 'Бутерброд', 'Гамбургер', 'Чисбургер', 'Пюрешка'];
-console.log(data, typeof data);
 
-confirm('Названия блоков будут такие: Омлет, Бутерброд, Гамбургер, Чисбургер, Пюрешка');
-confirm('И срабатывает вставка блока только если написать их в таком порядке');
-
-ingredientList(resipe1, data, blok1);
-ingredientList(resipe2, data, blok2);
-ingredientList(resipe3, data, blok3);
-ingredientList(resipe4, data, blok4);
-ingredientList(resipe5, data, blok5);
+ingredientList(resipe1, blok1);
+ingredientList(resipe2, blok2);
+ingredientList(resipe3, blok3);
+ingredientList(resipe4, blok4);
+ingredientList(resipe5, blok5);
 
 
-    function ingredientList (resipe, nameList, blok) {
-        let userAn = prompt('Введите название рецепта который хотите увидеть');
+    function ingredientList (resipe, blok) {
+        let userAn = prompt('Введите название рецепта который хотите увидеть: Омлет, Бутерброд, Гамбургер, Чисбургер, Пюрешка');
         console.log(userAn);
+        let h = prompt('Введите номер тега для блока: h1, h2, h3');
+        console.log(h);
         //let incorrect = '<div>' + '<h2>такого блока не существует</h2>' + '</div>';
         
         let List = '';
 
         for (let i = 0; i < resipe.length; i++ ) {
                 console.log(i);
-                List += '<h2 class="list__item">' + resipe[i]  + '</h2>'
+                List += '<' + h + ' ' + 'class="list__item">' + resipe[i]  + '</' + h + '>'
         }
 
-        if (userAn === nameList[0]) {
+        if (userAn === 'Омлет') {
                 let ListHtml = '<div class="list">'  +
                 List  + 
             '</div>';
 
-        blok.innerHTML = ListHtml;
+        blok.innerHTML += ListHtml;
         }
        
-        if (userAn === nameList[1]) {
+        if (userAn === 'Бутерброд') {
                 let ListHtml = '<div class="list">'  +
                 List  + 
             '</div>';
 
-        blok.innerHTML = ListHtml;
+        blok.innerHTML += ListHtml;
         }
-        if (userAn === nameList[2]) {
+        if (userAn === 'Гамбургер') {
                 let ListHtml = '<div class="list">'  +
                 List  + 
             '</div>';
 
-        blok.innerHTML = ListHtml;
+        blok.innerHTML += ListHtml;
         }
-        if (userAn === nameList[3]) {
+        if (userAn === 'Чисбургер') {
                 let ListHtml = '<div class="list">'  +
                 List  + 
             '</div>';
 
-        blok.innerHTML = ListHtml;
+        blok.innerHTML += ListHtml;
         }
-        if (userAn === nameList[4]) {
+        if (userAn === 'Пюрешка') {
                 let ListHtml = '<div class="list">'  +
                 List  + 
             '</div>';
 
-        blok.innerHTML = ListHtml;
+        blok.innerHTML += ListHtml;
         }
 }
