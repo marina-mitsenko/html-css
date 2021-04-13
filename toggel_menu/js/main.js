@@ -4,6 +4,7 @@ let menu = doc.querySelector('.menu');
 let toggleMenu = doc.querySelector('.toggle-menu');
 let close = doc.querySelector('.close');
 let menuCount = 0;
+let closeCount = 0;
 
 let form = doc.querySelector('.form');
 let call = doc.querySelector('.call');
@@ -12,22 +13,21 @@ let callCount =0;
 
 toggleMenu.onclick = function() {
     menuCount ++;
-    console.log(menuCount);
-    if (menuCount > 2) {
+    console.log('menu', menuCount);
+    if (menuCount > 1) {
         menuCount = 1; 
     }
 
     if (menuCount === 1) {
         menu.className = 'menu active';
+        close.className = 'close active';
+        toggleMenu.className = 'toggle-menu pasive';
        
-    }
-    if (menuCount === 2) {
-        menu.className = 'menu'; 
     }
 }
 call.onclick = function() {
     formCount ++;
-    console.log(formCount);
+    console.log('form', formCount);
     if (formCount > 3) {
         formCount = 3;
     }
@@ -42,4 +42,17 @@ call.onclick = function() {
     if (formCount === 3) {
         form.className = 'form';
     }
+}
+console.log('close', closeCount);
+close.onclick = function() {
+   closeCount ++;
+   console.log('close', closeCount);
+   if (closeCount > 1) {
+       closeCount = 1;
+   }
+   if (closeCount === 1) {
+        close.className = 'close';
+        toggleMenu.className = 'toggle-menu';
+        menu.className = 'menu'; 
+   }
 }
