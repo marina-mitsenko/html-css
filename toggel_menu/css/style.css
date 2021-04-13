@@ -69,11 +69,12 @@ li {
   background-color: orangered;
 }
 .close {
-  opacity: 0;
+  z-index: -1;
   position: absolute;
+  top: 50px;
 }
 .close.active {
-  opacity: 1;
+  z-index: 1;
 }
 
 .close:before, .close:after {
