@@ -8,11 +8,12 @@ li {
   list-style-type: none;
 }
 .container {
-  width: 1200px;
+  width: 1780px;
   margin: 50px auto;
 }
 .menu-block {
   width: 70%;
+  margin-left: 20px;
 }
 .toggle-menu, .close {
   width: 65px;
