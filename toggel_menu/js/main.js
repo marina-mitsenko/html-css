@@ -56,3 +56,6 @@ close.onclick = function() {
         menu.className = 'menu'; 
    }
 }
+form.onclick = function() {
+    form.className = 'form';
+}
