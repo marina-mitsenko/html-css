@@ -28,8 +28,8 @@ toggleMenu.onclick = function() {
 call.onclick = function() {
     formCount ++;
     console.log(formCount);
-    if (formCount > 2) {
-        formCount = 1;
+    if (formCount > 3) {
+        formCount = 3;
     }
     if (formCount === 1) {
         form.className = 'form active';
@@ -38,5 +38,8 @@ call.onclick = function() {
         form.className = 'form';
         call.className = 'call pasive';
         call.innerHTML = 'Вы заказали звонок!';
+    }
+    if (formCount === 3) {
+        form.className = 'form';
     }
 }
