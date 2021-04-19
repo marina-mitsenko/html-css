@@ -22,9 +22,6 @@ formhtmlELements.onsubmit = function(event) {
         console.log('какой клас задал пользователь:', formhtmlELements.class.value);
         console.log('Какой текс написал пользователь:', formhtmlELements.text.value)
    
-       // for (let i = 0; i < boxItem.length; i++) {
-        //        console.log(boxItem.length);
-       // }
 
         if(formhtmlELements.parent.value === 'box__item1') {
                 boxItem1.innerHTML = `<${formhtmlELements.teg.value} class="${formhtmlELements.class.value}">${formhtmlELements.text.value}</${formhtmlELements.teg.value}>`
