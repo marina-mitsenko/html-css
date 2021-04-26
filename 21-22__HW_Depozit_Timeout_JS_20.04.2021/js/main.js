@@ -56,12 +56,7 @@ function fieldIsEmpty(field) {
                 setTimeout(function(){
                         console.log('прошло 3 секунды')
                         field.style.border = '2px solid silver';
-                        boxItem3.innerHTML = 
-                        `
-                        <div class="box__item3">
-                        
-                        </div>
-                        `       
+                       
                 }, 3000);
                 boxItem3.innerHTML = 
                 `
