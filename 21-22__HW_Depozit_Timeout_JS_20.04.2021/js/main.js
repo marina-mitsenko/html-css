@@ -35,7 +35,7 @@ formEls[2].oninput = function() {
 
 formDepozit.onsubmit = function(event) {
         event.preventDefault();
-        //depozit(formDepozit);
+        depozit(formDepozit);
         console.log('событие отправки формы');
         console.log('какой срок выбрал пользователь:', formDepozit.term.value);
         console.log('какой процент выбрал пользователь:', formDepozit.percent.value);
@@ -49,7 +49,6 @@ function fieldIsEmpty(field) {
         if (value) {
                 console.log(value);
                 field.style.border = '2px solid silver';
-                depozit(formDepozit);
                 
         } else {
                 console.log('поле пустое:');
