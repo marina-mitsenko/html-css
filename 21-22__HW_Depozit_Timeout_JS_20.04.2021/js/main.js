@@ -11,11 +11,11 @@ console.log(formDepozit);
 
 formEls[0].onchange = function() {
         let  valueInput = this.value;
-        console.log(valueInput);
+        console.log(valueInput.length);
         if(valueInput) {
-                valueInput.length > +10;
-                console.log('значение слишком большое');
-
+               // valueInput.length > +10;
+                //console.log('значение слишком большое');
+                //this.style.background = 'red';
         }
 }
 
