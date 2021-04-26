@@ -9,13 +9,26 @@ let formEls = formDepozit.data.elements;
 console.log(formEls);
 console.log(formDepozit);
 
-formEls[0].onchange = function() {
+formEls[0].oninput = function() {
         let  valueInput = this.value;
         console.log(valueInput.length);
-        if(valueInput) {
-               // valueInput.length > +10;
-                //console.log('значение слишком большое');
-                //this.style.background = 'red';
+        if(valueInput.length > +10) {
+               //valueInput.length < +10;
+                console.log('значение слишком большое');
+                this.style.background = 'red';
+        } else{
+                this.style.background = 'white';
+        }
+}
+formEls[2].oninput = function() {
+        let  valueInput = this.value;
+        console.log(valueInput.length);
+        if(valueInput.length > +2) {
+               //valueInput.length < +10;
+                console.log('значение слишком большое');
+                this.style.background = 'red';
+        } else{
+                this.style.background = 'white';
         }
 }
 
