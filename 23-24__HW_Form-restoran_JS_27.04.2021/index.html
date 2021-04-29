@@ -14,7 +14,7 @@
 		<form action="#" name="main">
 			<div class="blok contact-info">
 				<h2 class="tittel">Контактная информация</h2>
-				<label for="">Имя</label><input type="text" name="name">
+				<label for="">Имя</label><input type="text" name="name" placeholder="Напишите своё имя">
 				<label for="">Телефон</label><input type="number" name="telefon" disabled>
 				<label for="">Email</label><input type="email" name="email" disabled>
 				<label for="">Дата посещения</label><input type="date" name="data" disabled>
@@ -40,13 +40,13 @@
 					<input class="btn" type="checkbox" name="chk1">
 					<input class="btn" type="checkbox" name="chk2">
 					<input class="btn" type="checkbox" name="chk3">	
-					<button class="btn1">Недалеко</button>
-					<button class="btn2">Увидел рекламу</button>
-					<button class="btn3">Посоветовали</button>
+					<button class="btn1" name="btn1">Недалеко</button>
+					<button class="btn2" name="btn2">Увидел рекламу</button>
+					<button class="btn3" name="btn3">Посоветовали</button>
 				</div>
 				<h3>Вы будете рекомендовать наше заведение своим знакомым?</h3>
-				<input type="radio"><span>Да</span>
-				<input type="radio"><span>Нет</span>
+				<input type="radio" name="yes"><span>Да</span>
+				<input type="radio" name="no"><span>Нет</span>
 			</div>
 		<button class="send" name="send" disabled>Отправить</button>					
 		</form>
