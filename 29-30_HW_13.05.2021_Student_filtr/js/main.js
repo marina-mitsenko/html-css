@@ -35,14 +35,11 @@ let student = [
         { name: 'Inga', age: 22, city: 'Poltava'},
 ];
 
-for(let i = 0; i < student.length; i++){
-        let user = student[i].name;
-console.log(student[i].name.indexOf('Inga'));
-console.log(user);
-
-       
-};
-
+//for(let i = 0; i < student.length; i++){
+//        let user = student[i].name;
+//console.log(student[i].name.indexOf('Inga'));
+//console.log(user);     
+//};
 
 console.log(student);
 console.log(student[0].name);
@@ -90,13 +87,10 @@ listStudents.innerHTML +=
 console.log(filter);
 
 
-
-
-
 formFilter[2].oninput = function(){
         let valueInput = this.value;
         console.log(valueInput);
-        let findСhild = doc.getElementsByClassName('student-city');
+        let findСhild = doc.getElementsByClassName('student');
         console.log(findСhild);
         while (findСhild[0]) {
                 findСhild[0].parentNode.removeChild(findСhild[0]);
@@ -112,14 +106,14 @@ formFilter[2].oninput = function(){
                 
                 res.innerHTML += 
                 `
-                <p class="student-city">Имя студента ${item.name} возраст ${item.age} город проживания ${item.city} </p>
+                <p class="student">Имя студента ${item.name} возраст ${item.age} город проживания ${item.city} </p>
                 `;
         });
 }
 formFilter[0].oninput = function(){
         let valueInput = this.value;
         console.log(valueInput);
-        let findСhild = doc.getElementsByClassName('student-name');
+        let findСhild = doc.getElementsByClassName('student');
         console.log(findСhild);
         while (findСhild[0]) {
                 findСhild[0].parentNode.removeChild(findСhild[0]);
@@ -131,14 +125,14 @@ formFilter[0].oninput = function(){
                 }
                 res.innerHTML += 
                 `
-                <p class="student-name">Имя студента ${item.name} возраст ${item.age} город проживания ${item.city} </p>
+                <p class="student">Имя студента ${item.name} возраст ${item.age} город проживания ${item.city} </p>
                 `;
         });
 }
 formFilter[1].oninput = function(){
         let valueInput = this.value;
         console.log(valueInput);
-        let findСhild = doc.getElementsByClassName('student-age');
+        let findСhild = doc.getElementsByClassName('student');
         console.log(findСhild);
         while (findСhild[0]) {
                 findСhild[0].parentNode.removeChild(findСhild[0]);
@@ -150,7 +144,7 @@ formFilter[1].oninput = function(){
                 }
                 res.innerHTML += 
                 `
-                <p class="student-age">Имя студента ${item.name} возраст ${item.age} город проживания ${item.city} </p>
+                <p class="student">Имя студента ${item.name} возраст ${item.age} город проживания ${item.city} </p>
                 `;
         });
 }
