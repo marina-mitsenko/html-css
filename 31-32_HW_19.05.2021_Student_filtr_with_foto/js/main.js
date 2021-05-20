@@ -66,6 +66,8 @@ function getUniq(key, sourceArr){
         });
         return arr
 }
+
+
 formFilter[2].oninput = function(){
         let valueInput = this.value;
         console.log(valueInput);
