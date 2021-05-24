@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: rgb(22, 81, 121);
+    font-family: 'Lobster';
+	background-image: url(../img/ethnic-floral-seamless-pattern_1159-3574.jpg);
+    font-size: 20px;
+	
+}
+a {
+	display: block;
+	text-decoration: none;
+	color: #323332;
+}
+li {
+	list-style-type: none;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-bottom: 2px solid white ;
+	padding-bottom: 10px;
+}
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /*cover*/
+	object-position: top;
+}
+select {
+	width: 150px;
+	height: 50px;
+	font-size: 25px;
+	color: rgb(7, 7, 7);
+	text-shadow: rgb(22, 81, 121) 1px 1px 0px;
+	font-weight: bolder;
+	text-align: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	margin: 20px 10px;
+	border: 1px solid rgb(233, 238, 241);
+}
+input {
+	width: 150px;
+	margin: 20px 10px;
+}
+label {
+	text-align: center;
+	margin: 20px 0;
+}
+i {
+	color: rgb(231, 247, 11);
+	font-size: 15px;
+	padding: 10px 0;
+}
+form {
+	margin: 100px 0;
+    border: 1px solid rgb(233, 238, 241);
+	background-color: white;
+	height: 600px;
+}
+.container {
+	width: 1200px;
+	margin: 50px auto;
+	
+}
+.showcase {
+	display: flex;
+}
+.filtr {
+	width: 15%;
+}
+.produkts{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	
+	.produkt{
+		width: 28%;
+		border: 3px solid rgb(233, 238, 241);
+		padding: 10px;
+		margin: 20px;
+		background-color: white;
+		&__foto{
+			border: 1px solid rgb(233, 238, 241);
+		}
+		&__price {
+			margin: 10px 0;
+			font-size: 30px;
+			color: rgb(7, 7, 7);
+			text-shadow: rgb(22, 81, 121) 1px 1px 0px;
+			font-weight: bolder;
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		}
+		&__name {
+			margin: 10px 0;
+		}
+	}
+	.icon{
+		text-align: start;
+	}
+	.icon :last-child {
+		text-align: end;
+		padding-left: 50px;
+		color: rgb(22, 81, 121);
+	}
+	.icon :first-child {
+		padding-left: 50px;
+	}
+	.art {
+		text-align: end;
+		margin-top: 10px;
+		font-size: 15px;
+	}
+}
+.select_tittel {
+	text-align: center;
+	margin: 20px 0;
+}
