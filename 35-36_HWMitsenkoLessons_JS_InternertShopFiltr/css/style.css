@@ -51,6 +51,13 @@ select {
 input {
   width: 150px;
   margin: 20px 10px;
+  font-size: 25px;
+  color: #070707;
+  text-shadow: #165179 1px 1px 0px;
+  font-weight: bolder;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 1px solid #e9eef1;
 }
 
 label {
