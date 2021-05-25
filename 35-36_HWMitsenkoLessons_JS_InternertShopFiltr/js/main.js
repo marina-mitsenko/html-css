@@ -143,7 +143,7 @@ function getUniq(key, sourceArr){
 
 let inputRange = 
 `
-<input type="range" id="slider"  min="2000" max="25000" step="200">
+<input type="range" id="slider"  min="2000" max="30000" step="200">
 <input type="text" id="valueSlider" value="">
 
 `;
@@ -168,9 +168,9 @@ formFilter[3].oninput = function(){
             findСhild[0].parentNode.removeChild(findСhild[0]);
     }
     let resFilter = products.filter(function(item) {
-            console.log(item.price);
+            console.log(+item.price > +valueInput);
             if (+item.price > +valueInput) {
-                return true;
+                return false;
             };
             
             divProduct.innerHTML += 
