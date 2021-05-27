@@ -92,6 +92,38 @@ btnPriceCheap.onclick = function(){
         });
     }
     console.log(products);
+    let findСhild = doc.getElementsByClassName('produkt');
+    //console.log(findСhild);
+    while (findСhild[0]) {
+            findСhild[0].parentNode.removeChild(findСhild[0]);
+    }
+    let productHtml = products.map(function(product){
+        let productHtml = 
+        `
+        <div class="produkt">
+        <div class="produkt__foto">
+            <div class="foto">
+                <img src="img/modular_systems/${product.foto}.jpg" alt="#">
+            </div>
+            <div class="icon">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-balance-scale"></i>
+            </div>
+        </div>
+        <div class="produkt__name">
+            <div class="name">${product.titel} ${product.titel2} ${product.name}</div>
+            <div class="art">артикул: ${product.art}</div>
+        </div>
+        <div class="produkt__price">
+        ${product.price} ${product.currency}
+        </div>
+        </div>
+    `;
+    return productHtml;
+    });
+    productHtml.forEach(function(htmlElement){
+        divProduct.insertAdjacentHTML('beforeend', htmlElement);
+    });
 }; 
 
 //сортування по ціні від більшого по кліку на кнопку і вивід в консоль
@@ -103,6 +135,38 @@ btnPriceExpensive.onclick = function(){
         });
     }
     console.log(products);
+    let findСhild = doc.getElementsByClassName('produkt');
+    //console.log(findСhild);
+    while (findСhild[0]) {
+            findСhild[0].parentNode.removeChild(findСhild[0]);
+    }
+    let productHtml = products.map(function(product){
+        let productHtml = 
+        `
+        <div class="produkt">
+        <div class="produkt__foto">
+            <div class="foto">
+                <img src="img/modular_systems/${product.foto}.jpg" alt="#">
+            </div>
+            <div class="icon">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-balance-scale"></i>
+            </div>
+        </div>
+        <div class="produkt__name">
+            <div class="name">${product.titel} ${product.titel2} ${product.name}</div>
+            <div class="art">артикул: ${product.art}</div>
+        </div>
+        <div class="produkt__price">
+        ${product.price} ${product.currency}
+        </div>
+        </div>
+    `;
+    return productHtml;
+    });
+    productHtml.forEach(function(htmlElement){
+        divProduct.insertAdjacentHTML('beforeend', htmlElement);
+    });
 };
 
 //сортування по назві товару по кліку на кнопку і вивід в консоль
@@ -122,6 +186,38 @@ btnSortName.onclick = function(){
         });
     }
     console.log(products);
+    let findСhild = doc.getElementsByClassName('produkt');
+    //console.log(findСhild);
+    while (findСhild[0]) {
+            findСhild[0].parentNode.removeChild(findСhild[0]);
+    }
+    let productHtml = products.map(function(product){
+        let productHtml = 
+        `
+        <div class="produkt">
+        <div class="produkt__foto">
+            <div class="foto">
+                <img src="img/modular_systems/${product.foto}.jpg" alt="#">
+            </div>
+            <div class="icon">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-balance-scale"></i>
+            </div>
+        </div>
+        <div class="produkt__name">
+            <div class="name">${product.titel} ${product.titel2} ${product.name}</div>
+            <div class="art">артикул: ${product.art}</div>
+        </div>
+        <div class="produkt__price">
+        ${product.price} ${product.currency}
+        </div>
+        </div>
+    `;
+    return productHtml;
+    });
+    productHtml.forEach(function(htmlElement){
+        divProduct.insertAdjacentHTML('beforeend', htmlElement);
+    });
 };
 
 //сортування по групі товару по кліку на кнопку і вивід в консоль
@@ -141,6 +237,38 @@ btnSortGroup.onclick = function(){
         });
     }
     console.log(products);
+    let findСhild = doc.getElementsByClassName('produkt');
+    //console.log(findСhild);
+    while (findСhild[0]) {
+            findСhild[0].parentNode.removeChild(findСhild[0]);
+    }
+    let productHtml = products.map(function(product){
+        let productHtml = 
+        `
+        <div class="produkt">
+        <div class="produkt__foto">
+            <div class="foto">
+                <img src="img/modular_systems/${product.foto}.jpg" alt="#">
+            </div>
+            <div class="icon">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-balance-scale"></i>
+            </div>
+        </div>
+        <div class="produkt__name">
+            <div class="name">${product.titel} ${product.titel2} ${product.name}</div>
+            <div class="art">артикул: ${product.art}</div>
+        </div>
+        <div class="produkt__price">
+        ${product.price} ${product.currency}
+        </div>
+        </div>
+    `;
+    return productHtml;
+    });
+    productHtml.forEach(function(htmlElement){
+        divProduct.insertAdjacentHTML('beforeend', htmlElement);
+    });
 };
 
 
