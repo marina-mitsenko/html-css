@@ -66,6 +66,84 @@ div.innerHTML = '';
 divProd.className = 'produkts';
 let divShowcase = doc.querySelector('.showcase');
 divShowcase.appendChild(divProd);
+container.insertAdjacentHTML('afterbegin', `
+<div class="sort" name="sort">
+<button class="submit sort__price-cheap" name="pricecheap">Сортування від дешевого до дорогого<i class="fas fa-sort-amount-down-alt"></i></button>
+<button class="submit sort__price-expensive" name="priceexpensive">Сортування від дорогого до дешевого<i class="fas fa-sort-amount-down"></i></button>
+<button class="submit sort__name" name="sortname">Сортування по назві<i class="fas fa-sort-alpha-up"></i></button>
+<button class="submit sort__group" name="sortgroup">Сортування по групам<i class="fas fa-sort"></i></button>
+</div>`);
+
+
+
+let btnPriceCheap = doc.querySelector('.sort__price-cheap');
+let btnPriceExpensive = doc.querySelector('.sort__price-expensive');
+let btnSortName = doc.querySelector('.sort__name');
+let btnSortGroup = doc.querySelector('.sort__group');
+
+
+//сортування по ціні від меншого по кліку на кнопку і вивід в консоль
+let clickBtn = false;
+btnPriceCheap.onclick = function(){
+    console.log(clickBtn);
+    if(clickBtn===false){
+        products.sort(function(a, b){
+            return a.price - b.price;
+        });
+    }
+    console.log(products);
+}; 
+
+//сортування по ціні від більшого по кліку на кнопку і вивід в консоль
+btnPriceExpensive.onclick = function(){
+    console.log(clickBtn);
+    if(clickBtn===false){
+        products.sort(function(a, b){
+            return b.price - a.price;
+        });
+    }
+    console.log(products);
+};
+
+//сортування по назві товару по кліку на кнопку і вивід в консоль
+btnSortName.onclick = function(){
+    console.log(clickBtn);
+    if(clickBtn===false){
+        products.sort(function(a, b){
+            if(a.name < b.name) {
+                return -1
+            }
+            if(a.name > b.name) {
+                return 1
+            }
+            if(a.name == b.name){
+                return 0
+            }
+        });
+    }
+    console.log(products);
+};
+
+//сортування по групі товару по кліку на кнопку і вивід в консоль
+btnSortGroup.onclick = function(){
+    console.log(clickBtn);
+    if(clickBtn===false){
+        products.sort(function(a, b){
+            if(a.titel2 < b.titel2) {
+                return -1
+            }
+            if(a.titel2 > b.titel2) {
+                return 1
+            }
+            if(a.titel2 == b.titel2){
+                return 0
+            }
+        });
+    }
+    console.log(products);
+};
+
+
 let divProduct = doc.querySelector('.produkts');
 let divF = doc.createElement('div');
 divF.className = 'filtr';
@@ -157,6 +235,7 @@ formFilter.insertAdjacentHTML('beforeend', inputRange);
 };*/
 console.log(formFilter[4]);
 console.log(valueSlider.value)
+
 
 formFilter[3].oninput = function(){
     valueSlider.value = slider.value;
@@ -306,3 +385,5 @@ formFilter[2].oninput = function(){
             `;
     });
 }
+
+
