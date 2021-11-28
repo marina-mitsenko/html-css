@@ -1,0 +1,64 @@
+button:hover {
+    background: $accentColor;
+    color: $firstColor;
+}
+.form__button {
+    min-width: 350px;
+    min-height: 60px;
+    background: $firstColor;
+    @include button ();
+    @media (max-width: 1000px) {
+        min-width: 80%;
+    }
+    @media (max-width: 768px) {
+        min-height: 40px;  
+    }
+    @media (max-width: 370px) {
+       min-height: 20%;
+       margin: 0;
+    }
+}
+.pricing__button,  .offer__button {
+    @include button();
+    min-width: 200px;
+    min-height: 55px;
+    background: $secondColor;
+    margin-top: 30px;
+    @media (max-width: 768px) {
+        margin-top: 15px;
+        min-width: 80%;
+        min-height: 45px;
+    }
+}
+.offer__button {
+    @media (max-width: 600px) {
+        margin-top: 15px;
+        min-width: initial;
+        margin: 10px auto;
+        width: 30%;
+        min-height: 45px;
+    }
+}
+.call {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: none;
+    background: $accentColor;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    @include shadowBox;
+    @media (max-width: 700px) {
+        width: 60px;
+        height: 60px;
+    }
+}
+.call a, .call i {
+    color: $basicColor;
+    font-size: 50px;
+    @include shadowText;
+    @media (max-width: 700px) {
+        font-size: 30px;
+    }
+}

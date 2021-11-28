@@ -1,0 +1,156 @@
+.footer {
+    background: $secondColor; 
+    padding: 20px 0;
+    @media (max-width: 768px) {
+        height: initial;
+    }
+    &__content {
+        @include Flex();
+        height: 100%;
+        width: 100%;
+    }
+    &__signature {
+        width: 100%;
+        @include Flex (center, center, row);
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+        @media (max-width: 370px) {
+            font-size: 12px;
+        }
+
+    }
+    &__text {
+        color: white;
+        @include font-p-content();
+        @media (max-width: 1000px) {
+            font-size: 14px;
+        }
+    }
+    &__text i {
+        font-size: 16px;
+    }
+    &__text:last-child {
+        color: $basicColor;
+        font-style: italic;
+        margin-left: 10px;
+    }
+    &__text:nth-child(2) {
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        margin: 0 10px;
+    }
+}
+.footer__menu {
+    width: 100%;
+    .footer-menu {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        @media (max-width: 700px) {
+           font-size: 14px;
+        }
+        
+        &__link {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: MontserratRegular;
+            margin: 10px;
+            position: relative;
+            color: $basicColor; /*задаём цвет ссылки*/
+            cursor: pointer;
+            line-height: 1; /*задаём высоту строки*/
+            text-decoration: none; /*убираем подчёркивание*/
+            padding: 10px;
+            @media (max-width: 700px) {
+                font-size: 14px;
+             }
+        }
+        &__link:after {
+            display: block;
+            position: absolute;
+            left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+            width: 0;/*задаём длинну линии до наведения курсора*/
+            height: 2px; /*задаём ширину линии*/
+            margin-top: 5px;
+            background-color: $basicColor; /*задаём цвет линии*/
+            content: "";
+            transition: width 0.3s ease-out; /*задаём время анимации*/
+        }
+        
+        &__link:hover:after,
+        &__link:focus:after {
+            width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+        }
+        &__item:hover {
+            margin-right: 0;
+        }
+    }
+}
+.footer-icon {
+    width: 100%;
+    @include Flex(center, center, row);
+}
+.footer-icon i {
+    margin: 20px;
+    position: relative;
+}
+.footer__contact {
+    color: $basicColor; 
+    text-align: center;
+    @media (max-width: 370px) {
+        width: 80%;
+    }
+}
+.footer__contact i {
+    font-size: 15px;
+    color: $basicColor;
+}
+.footer-element_razvorota {
+    position: relative;
+    font-size: 25px;
+    color: $basicColor;
+    width: 33px;
+    margin: 35px;
+    height: 33px;
+    line-height: 35px;
+    display: inline-block;
+    text-align: center;
+    -webkit-perspective: 50em;
+    perspective: 50em;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .footer-element_razvorota:after {
+    position: absolute;
+    top: -3px;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    border: 2px solid $basicColor;
+    content: '';
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+  .footer-element_razvorota:before,
+  .footer-element_razvorota:after {
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+  }
+  .footer-element_razvorota:hover,
+  .footer-element_razvorota:active,
+  .footer-element_razvorota.hover {
+    color: $hoverColor;
+  }
+  .footer-element_razvorota:hover:after,
+  .footer-element_razvorota:active:after,
+  .footer-element_razvorota.hover:after {
+    border-color: $hoverColor;
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }

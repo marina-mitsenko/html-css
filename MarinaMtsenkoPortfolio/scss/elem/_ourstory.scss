@@ -1,0 +1,11 @@
+.ourstory {
+    background: $secondColor;
+    padding: 20px 0;
+    
+    &__content {
+        color: $basicColor;
+        @include Littel-Title;
+        
+    }
+    
+}

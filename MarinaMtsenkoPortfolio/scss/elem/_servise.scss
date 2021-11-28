@@ -1,0 +1,102 @@
+
+.servise {
+    background: #d3d3d3;
+    padding: 0 50px;
+    
+    &__content {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 50px;
+        @media (max-width: 850px) {
+            padding-top: 30px;
+        }
+        @media (max-width: 600px) {
+           width: 100%;
+         }
+        @media (max-width: 370px) {
+            padding-top: 20px;
+        }
+    }
+    &__blocks {
+        @include Flex(center, start, row);
+        @media (max-width: 850px) {
+           flex-wrap: wrap;
+        }
+        @media (max-width: 615px) {
+            flex-direction: column;
+            width: 100%;
+        }
+
+    }
+    &__tittel {
+        width: 100%;
+        min-height: 120px;
+        
+        @media (max-width: 850px) {
+        min-height: 70px;
+        } 
+        @media (max-width: 600px) {
+            min-height: 50px;
+         }
+        @media (max-width: 370px) {
+            // flex-direction: column;
+        }
+    }
+
+    &__tittelservices {
+        color: $secondColor;
+        @include MediumTittel;
+    }
+    &__block {
+        @include Flex( start, center, column);
+        width: 400px;
+        margin: 50px;
+        color: $secondColor;
+        @media (max-width: 850px) {
+            margin: 20px;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            min-height: 290px;
+            margin-right: 5px;
+        }
+        @media (max-width: 615px) {
+            min-height: 100%;
+            min-width: 100%;
+            margin: initial;
+            border: 1px solid $accentColor;
+            border-radius: 2em;
+        }
+        @media (max-width: 370px) {
+            margin: initial;
+         }
+    }
+    &__block:last-child {
+        margin-right: 0;
+    }
+    &__block i {
+        margin-bottom: 50px;
+        font-size: 120px;
+        color: $accentColor;
+        -webkit-text-stroke: .04em black;
+        @media (max-width: 850px) {
+            font-size: 80px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            display: none;
+         }
+    }
+    &__titel {
+        @include Tittel;
+        margin-bottom: 20px;
+        @include Dark-Pointed-Text;
+        @media (max-width: 600px) {
+            color: $accentColor;
+            -webkit-text-stroke: .04em black;
+         }
+    }
+    &__text {
+        @include font-p-content;
+    }
+}

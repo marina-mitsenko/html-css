@@ -1,0 +1,215 @@
+
+.header {
+    @include Flex(); 
+    color: $basicColor;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    height: 210px;
+    margin-bottom: 50px;
+   
+    &__menu {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__toggle-menu {
+        display: none;
+        $lineWidth: 50px;
+        $lineHeight: 2px;
+        $lineMargin: 10px;
+        $lineColor: $basicColor;
+
+        &::before, &::after {
+                content: '';
+                display: block;
+                width: $lineWidth;
+                height: $lineHeight;
+                background: $lineColor;
+        }
+            
+        span {
+            display: block;
+            width: $lineWidth;
+            height: $lineHeight;
+            margin: $lineMargin 0;
+            background: $lineColor;
+        }
+    }
+}
+.logo {
+    
+    &__img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 80px;
+        box-shadow: 3px 3px 19px 3px rgba($secondColor, 0.2);
+        @media (max-width: 768px) {
+            width: 100px;
+            height: 100px;
+        }
+    } 
+}
+
+.menu {
+    @include Flex();
+    
+    &__link-number {
+        height: 50px;
+    }
+    &__link-title{
+        text-transform: uppercase;
+        height: 25px;
+    }
+    &__link-text {
+        font-size: 16px;
+        text-transform: lowercase;
+    }
+    &__item {
+        width: 25%;
+    }
+    &__item:last-child {
+        margin-right: 0;
+       
+    }
+    &__item:hover {
+        margin-right: 0;
+    }
+    &__link {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: MontserratRegular; 
+        position: relative;
+        color: $basicColor; /*задаём цвет ссылки*/
+        cursor: pointer;
+        line-height: 1; /*задаём высоту строки*/
+        text-decoration: none; /*убираем подчёркивание*/
+        padding: 20px;
+    }
+    &__link:after {
+        display: block;
+        position: absolute;
+        left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+        width: 0;/*задаём длинну линии до наведения курсора*/
+        height: 2px; /*задаём ширину линии*/
+        margin-top: 20px;
+        background-color: $basicColor; /*задаём цвет линии*/
+        content: "";
+        transition: width 0.3s ease-out; /*задаём время анимации*/
+    }
+    
+    &__link:hover:after,
+    &__link:focus:after {
+        width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+    }
+    
+}
+.aktive {
+    background: rgba($basicColor, 0.1);
+}
+.icon {
+    display: none;
+}
+@media (max-width:900px) {
+    .header {
+        height: initial;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    .header__menu {
+        position: relative;
+    }
+    .header__menu:hover {
+        .menu {
+            z-index: 1;
+            visibility: visible;
+            transform: translate(50px);
+           
+            &__icon {
+                margin: 20px;
+            }
+            &__icon i {
+                color: $basicColor;
+                font-size: 40px;
+            }
+            &__link-number {
+                display: none;
+            }
+            &__link-text {
+                display: none;
+            }
+            .icon {
+                display: flex;
+                flex-direction: row;
+               }
+        }
+    }
+    .header__toggle-menu {
+        display: block;
+    }
+   .menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    position: absolute;
+    transform: translate(0);
+    transition: transform .6s;
+    top: -5px;
+    right: 25px;
+    min-width: 100vw;
+    height: 100vh;
+    border-radius: 5%;
+    background: rgba($color: $secondColor, $alpha: 1);
+    box-shadow: 0 0 10px rgba(19, 18, 18, 0.801);
+    @media (max-width: 800px) {
+        .menu {
+            // width: 780px;
+        }
+    }
+    @media (max-width: 700px) {
+        .menu {
+            // width: 680px;
+        }
+    }
+    @media (max-width: 600px) {
+        .menu {
+            // width: 580px;
+        }
+    }
+    
+    @media (max-width: 500px) {
+        .menu {
+            // width: 480px;
+            &__link {
+                font-size: 18px;
+            }
+        }
+    }
+    
+    &__link:hover {
+        background-color: initial;
+        color: $firstColor;
+        font-size: 33px;
+        transition: transform .6s;
+    }
+    }
+    .menu__link {
+        padding-left: 15px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        text-shadow: 3px 5px 6px $secondColor;
+    }
+    .aktive {
+        background-color: initial;
+        padding: 0 15px;
+    }
+   
+}

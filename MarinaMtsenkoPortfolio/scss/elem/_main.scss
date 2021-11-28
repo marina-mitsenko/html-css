@@ -1,0 +1,105 @@
+.main {
+    @include Flex();
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    @media (max-width: 1000px) {
+        height: 100%;
+    }
+    @media (max-width: 768px) {
+        height: 100%;
+        flex-direction: column;
+    }
+}
+.me {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+.me img {
+    text-align: center;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    opacity: 1;
+    @media (max-width: 850px) {
+        width: 250px;
+        height: 250px;
+    }
+    
+}
+.development {
+    width: 100%;
+    color: blanchedalmond;
+    @include Flex($jc: center, $ai: center, $fd: column);
+    font-family: 'Montserrat', sans-serif;
+    @media (max-width: 900px) {
+        min-width: initial;
+    }
+    @media (max-width: 370px) {
+        min-height: initial;
+        margin-bottom: 40px;
+    }
+    
+    
+    &__web {
+        @include Tittel;
+        color: $basicColor;
+    }
+    &__creation {
+        @include BigTittel;
+        color: $basicColor;
+    }
+    &__content {
+        @include font-p-content;
+        padding-top: 40px;
+        @include Swimming-Text;
+    }
+
+       
+    &__content {
+        @include font-p-content();
+        @media (max-width: 370px) {
+            padding-top: 20px;
+        }
+    }
+    &__contact {
+        @include Littel-Title;
+        @include Light-Pointed-Text;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+    }
+    &__contact i {
+        color: $basicColor;
+        font-size: 25px;
+        // margin: 20px;
+    }
+    .btn-contact{
+        width: initial;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: none;
+        &__icon i {
+            margin-right: 30px;
+        }
+        &__icon i:first-child {
+            margin-left: 30px;
+        }
+        @include spin;
+        @media (max-width: 700px) {
+            &__icon i {
+                margin-right: 10px;
+            }
+            &__icon i:first-child {
+                margin-left: 10px;
+            }
+         }
+    }
+
+}

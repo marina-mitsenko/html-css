@@ -1,0 +1,50 @@
+
+.connexions {
+    color: $basicColor;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    
+    &__title {
+        @include BigTittel;
+    }
+    &__box {
+        display: flex;
+        min-width: 100%;
+    }
+}
+
+.connexion {
+    width: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    height: 245px;
+    flex-wrap: wrap;
+    
+    &__icon {
+        display: flex;
+        height: 85px;
+        width: 330px;
+        color: $basicColor;
+        @include Swimming-Text;
+    }
+    
+    @include spin;
+    &__text {
+        width: 60%;
+        height: 85px;
+        @include font-p-content;
+        text-transform: initial;
+        display: flex;
+        align-items: flex-end;
+    }
+    &__text:hover {
+        color: $accentColor;
+    }
+
+}
+.rapport {
+    display: none;
+}
