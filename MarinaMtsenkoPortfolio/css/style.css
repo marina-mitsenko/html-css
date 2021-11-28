@@ -1931,7 +1931,6 @@ li {
   padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
-  z-index: 10;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2073,7 +2072,6 @@ li {
   padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
-  z-index: 10;
   background: #161516;
   color: #f8f7f5;
 }
