@@ -118,7 +118,7 @@ button:hover {
 }
 
 .call a, .call i {
-  color: blanchedalmond;
+  color: #f8f7f5;
   font-size: 50px;
   text-transform: uppercase;
   text-shadow: 3px 6px 6px #333131, 0 0 0.1em yellow;
@@ -166,7 +166,7 @@ button:hover {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  color: blanchedalmond;
+  color: #f8f7f5;
   padding-top: 35px;
   padding-bottom: 35px;
   position: relative;
@@ -198,7 +198,7 @@ button:hover {
   display: block;
   width: 50px;
   height: 2px;
-  background: blanchedalmond;
+  background: #f8f7f5;
 }
 
 .header__toggle-menu span {
@@ -206,7 +206,7 @@ button:hover {
   width: 50px;
   height: 2px;
   margin: 10px 0;
-  background: blanchedalmond;
+  background: #f8f7f5;
 }
 
 .logo__img {
@@ -278,7 +278,7 @@ button:hover {
   font-weight: bold;
   font-family: MontserratRegular;
   position: relative;
-  color: blanchedalmond;
+  color: #f8f7f5;
   /*задаём цвет ссылки*/
   cursor: pointer;
   line-height: 1;
@@ -298,7 +298,7 @@ button:hover {
   height: 2px;
   /*задаём ширину линии*/
   margin-top: 20px;
-  background-color: blanchedalmond;
+  background-color: #f8f7f5;
   /*задаём цвет линии*/
   content: "";
   -webkit-transition: width 0.3s ease-out;
@@ -313,7 +313,7 @@ button:hover {
 }
 
 .aktive {
-  background: rgba(255, 235, 205, 0.1);
+  background: rgba(248, 247, 245, 0.1);
 }
 
 .icon {
@@ -340,7 +340,7 @@ button:hover {
     margin: 20px;
   }
   .header__menu:hover .menu__icon i {
-    color: blanchedalmond;
+    color: #f8f7f5;
     font-size: 40px;
   }
   .header__menu:hover .menu__link-number {
@@ -542,7 +542,7 @@ button:hover {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: blanchedalmond;
+  color: #f8f7f5;
 }
 
 @media (max-width: 900px) {
@@ -563,12 +563,6 @@ button:hover {
   }
 }
 
-@media (max-width: 370px) {
-  .development__web {
-    font-size: 14px;
-  }
-}
-
 .development__creation {
   font-family: 'Montserrat', sans-serif;
   font-size: 70px;
@@ -577,7 +571,7 @@ button:hover {
   text-transform: uppercase;
   text-shadow: 3px 6px 6px black, 0 0 0.1em yellow;
   padding-bottom: 10px;
-  color: blanchedalmond;
+  color: #f8f7f5;
 }
 
 @media (max-width: 900px) {
@@ -694,8 +688,8 @@ button:hover {
   font-size: 25px;
   text-align: center;
   text-transform: uppercase;
-  color: blanchedalmond;
-  border-bottom: 1px solid blanchedalmond;
+  color: #f8f7f5;
+  border-bottom: 1px solid #f8f7f5;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   padding: 10px 15px;
@@ -728,7 +722,7 @@ button:hover {
 }
 
 .development__contact i {
-  color: blanchedalmond;
+  color: #f8f7f5;
   font-size: 25px;
 }
 
@@ -762,7 +756,7 @@ button:hover {
 .development .btn-contact .element_razvorota {
   position: relative;
   font-size: 40px;
-  color: blanchedalmond;
+  color: #f8f7f5;
   width: 75px;
   margin: 30px;
   height: 75px;
@@ -791,7 +785,7 @@ button:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  border: 2px solid blanchedalmond;
+  border: 2px solid #f8f7f5;
   content: '';
   z-index: -1;
   -webkit-border-radius: 50%;
@@ -1058,12 +1052,6 @@ button:hover {
   }
 }
 
-@media (max-width: 370px) {
-  .servise__titel {
-    font-size: 14px;
-  }
-}
-
 @media (max-width: 600px) {
   .servise__titel {
     color: yellow;
@@ -1102,7 +1090,7 @@ button:hover {
 }
 
 .ourstory__content {
-  color: blanchedalmond;
+  color: #f8f7f5;
   font-family: 'Montserrat', serif;
   font-weight: bold;
   font-size: 25px;
@@ -1485,7 +1473,7 @@ li {
   min-width: 30%;
   margin-left: 30px;
   background: #333131;
-  color: blanchedalmond;
+  color: #f8f7f5;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1700,12 +1688,6 @@ li {
 @media (max-width: 600px) {
   .pricing__heading {
     font-size: 16px;
-  }
-}
-
-@media (max-width: 370px) {
-  .pricing__heading {
-    font-size: 14px;
   }
 }
 
@@ -1958,6 +1940,7 @@ li {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #f8f7f5;
 }
 
 .me-about img {
@@ -2012,7 +1995,7 @@ li {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: blanchedalmond;
+  color: #f8f7f5;
   line-height: 1.5;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
@@ -2038,12 +2021,6 @@ li {
   }
 }
 
-@media (max-width: 370px) {
-  .title__web {
-    font-size: 14px;
-  }
-}
-
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -2063,7 +2040,7 @@ li {
   text-transform: uppercase;
   text-shadow: 3px 6px 6px black, 0 0 0.1em yellow;
   padding-bottom: 10px;
-  color: blanchedalmond;
+  color: #f8f7f5;
 }
 
 @media (max-width: 900px) {
@@ -2093,6 +2070,18 @@ li {
 .hello {
   width: 80%;
   margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 10;
+  background: #161516;
+  color: #f8f7f5;
+}
+
+@media (max-width: 850px) {
+  .hello {
+    width: 100%;
+  }
 }
 
 .hello__title {
@@ -2101,8 +2090,7 @@ li {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: #333131;
-  margin-top: 20px;
+  background: #333131;
 }
 
 @media (max-width: 900px) {
@@ -2123,19 +2111,13 @@ li {
   }
 }
 
-@media (max-width: 370px) {
-  .hello__title {
-    font-size: 14px;
-  }
-}
-
 .hello__text {
-  margin-top: 30px;
   font-family: 'Roboto', serif;
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #161516;
+  width: 80%;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -2172,7 +2154,7 @@ li {
 }
 
 .connexions {
-  color: blanchedalmond;
+  color: #f8f7f5;
   position: relative;
   margin: 0 auto;
   width: 90%;
@@ -2272,7 +2254,7 @@ li {
   display: flex;
   height: 85px;
   width: 330px;
-  color: blanchedalmond;
+  color: #f8f7f5;
   line-height: 1.5;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
@@ -2301,7 +2283,7 @@ li {
 .connexion .element_razvorota {
   position: relative;
   font-size: 40px;
-  color: blanchedalmond;
+  color: #f8f7f5;
   width: 75px;
   margin: 30px;
   height: 75px;
@@ -2330,7 +2312,7 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
-  border: 2px solid blanchedalmond;
+  border: 2px solid #f8f7f5;
   content: '';
   z-index: -1;
   -webkit-border-radius: 50%;
@@ -2502,12 +2484,18 @@ li {
   }
 }
 
+@media (max-width: 370px) {
+  .footer__text {
+    font-size: 12px;
+  }
+}
+
 .footer__text i {
   font-size: 16px;
 }
 
 .footer__text:last-child {
-  color: blanchedalmond;
+  color: #f8f7f5;
   font-style: italic;
   margin-left: 10px;
 }
@@ -2548,7 +2536,7 @@ li {
   font-family: MontserratRegular;
   margin: 10px;
   position: relative;
-  color: blanchedalmond;
+  color: #f8f7f5;
   /*задаём цвет ссылки*/
   cursor: pointer;
   line-height: 1;
@@ -2574,7 +2562,7 @@ li {
   height: 2px;
   /*задаём ширину линии*/
   margin-top: 5px;
-  background-color: blanchedalmond;
+  background-color: #f8f7f5;
   /*задаём цвет линии*/
   content: "";
   -webkit-transition: width 0.3s ease-out;
@@ -2619,7 +2607,7 @@ li {
 }
 
 .footer__contact {
-  color: blanchedalmond;
+  color: #f8f7f5;
   text-align: center;
 }
 
@@ -2631,13 +2619,13 @@ li {
 
 .footer__contact i {
   font-size: 15px;
-  color: blanchedalmond;
+  color: #f8f7f5;
 }
 
 .footer-element_razvorota {
   position: relative;
   font-size: 25px;
-  color: blanchedalmond;
+  color: #f8f7f5;
   width: 33px;
   margin: 35px;
   height: 33px;
@@ -2657,7 +2645,7 @@ li {
   bottom: 3px;
   left: 0;
   right: 0;
-  border: 2px solid blanchedalmond;
+  border: 2px solid #f8f7f5;
   content: '';
   z-index: -1;
   -webkit-border-radius: 50%;
@@ -2703,13 +2691,13 @@ li {
   left: 50%;
   top: 50%;
   height: 2px;
-  background: -webkit-linear-gradient(135deg, blanchedalmond, rgba(0, 0, 255, 0));
-  background: -o-linear-gradient(135deg, blanchedalmond, rgba(0, 0, 255, 0));
-  background: linear-gradient(-45deg, blanchedalmond, rgba(0, 0, 255, 0));
+  background: -webkit-linear-gradient(135deg, #f8f7f5, rgba(0, 0, 255, 0));
+  background: -o-linear-gradient(135deg, #f8f7f5, rgba(0, 0, 255, 0));
+  background: linear-gradient(-45deg, #f8f7f5, rgba(0, 0, 255, 0));
   -webkit-border-radius: 999px;
           border-radius: 999px;
-  -webkit-filter: drop-shadow(0 0 6px blanchedalmond);
-  filter: drop-shadow(0 0 6px blanchedalmond);
+  -webkit-filter: drop-shadow(0 0 6px #f8f7f5);
+  filter: drop-shadow(0 0 6px #f8f7f5);
   -webkit-animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
   animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
 }
