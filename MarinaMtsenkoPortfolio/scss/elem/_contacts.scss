@@ -11,6 +11,10 @@
     &__box {
         display: flex;
         min-width: 100%;
+        @media (max-width: 850px) {
+          min-width: initial;
+          margin: 0 auto;
+        }
     }
 }
 
@@ -22,6 +26,13 @@
     background: none;
     height: 245px;
     flex-wrap: wrap;
+    @media (max-width: 850px) {
+        flex-direction: row;
+        height: initial;
+        padding-bottom: 40px;
+        margin: 0 auto;
+        width: max-content;
+    }
     
     &__icon {
         display: flex;
@@ -29,6 +40,11 @@
         width: 330px;
         color: $basicColor;
         @include Swimming-Text;
+        @media (max-width: 850px) {
+            margin: 0 auto;
+            width: 50%;
+        }
+
     }
     
     @include spin;

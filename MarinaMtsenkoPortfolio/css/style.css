@@ -90,6 +90,12 @@ button:hover {
   }
 }
 
+@media (max-width: 370px) {
+  .offer__button {
+    width: 50%;
+  }
+}
+
 .call {
   -webkit-border-radius: 50%;
           border-radius: 50%;
@@ -2214,6 +2220,13 @@ li {
   min-width: 100%;
 }
 
+@media (max-width: 850px) {
+  .connexions__box {
+    min-width: initial;
+    margin: 0 auto;
+  }
+}
+
 .connexion {
   width: initial;
   display: -webkit-box;
@@ -2234,6 +2247,22 @@ li {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  .connexion {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: initial;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }
 
 .connexion__icon {
@@ -2259,6 +2288,13 @@ li {
   to {
     margin-left: 0%;
     width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .connexion__icon {
+    margin: 0 auto;
+    width: 50%;
   }
 }
 
