@@ -107,7 +107,7 @@
 
 @mixin Swimming-Text {
     line-height: 1.5;
-    animation-duration: 10s; //время анимация
+    animation-duration: 5s; //время анимация
     animation-name: slidein;//название анимации
     @keyframes slidein {
         from {

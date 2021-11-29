@@ -66,3 +66,44 @@ button:hover {
         font-size: 30px;
     }
 }
+.write {
+    width: 425px;
+    height: 30px;
+    border: none;
+    background: $accentColor;
+    position: fixed;
+    top: 3%;
+    right: 10%;
+    @include shadowBox;
+    @media (max-width: 700px) {
+        width: 325px;
+        height: 20px;
+    }
+    @media (max-width: 450px) {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        top: initial;
+        bottom: 50px;
+        right: 50px;
+        &__text {
+            display: none;
+        }
+        .write__link i {
+            display: block;
+            color: $basicColor;
+            font-size: 40px;
+        }
+    }
+}
+.write__link i {
+    display: none;
+}
+.write a {
+    color: $firstColor;
+    font-size: 20px;
+    @include shadowText;
+    @media (max-width: 700px) {
+        font-size: 14px;
+    }
+}
