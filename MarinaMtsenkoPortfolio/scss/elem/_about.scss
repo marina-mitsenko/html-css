@@ -63,7 +63,8 @@
     }
     &__title {
         @include Tittel;
-        background: $firstColor
+        background: $firstColor;
+        padding: 10px 0;
     }
     &__text {
         @include font-p-content;
@@ -78,4 +79,11 @@
         width: 20%;
         height: initial;
     }
+}
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+body {
+  background: #111;
+}
+.hidden {
+  opacity:0;
 }

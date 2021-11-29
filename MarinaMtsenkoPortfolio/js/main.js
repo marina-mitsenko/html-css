@@ -8,7 +8,6 @@ let rapport = doc.querySelector('.rapport');
 let formButton = doc.querySelector('.form__button');
 console.log(write);
 close.onclick = function(){
-    
     menu.style.zIndex="-1";
 }
 toggle.onclick = function(){
@@ -17,13 +16,19 @@ toggle.onclick = function(){
 }
 write.onclick = function(){
     rapport.style.display="block";
-    
+    write.style.display="none";
 }
 formButton.onclick = function(){
     // console.log('clik');
     rapport.style.display="none";
+    write.style.display="block";
     write.innerHTML = `<a href="#" class="write__link">
     <p class="write__text">Я обов'язково звяжусь з Вами!</p>
     <i class="fas fa-at"></i>
     </a>`;
+    function delWrite() {
+        write.style.display="none";
+      }
+      
+      setTimeout(delWrite, 5000);
 }

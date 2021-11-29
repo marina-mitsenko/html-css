@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
 @font-face {
   font-family: 'QuiteChocolatey';
   src: url("../fonts/QuiteChocolatey/QuiteChocolatey.eot");
@@ -2179,6 +2180,7 @@ li {
   text-align: center;
   text-transform: uppercase;
   background: #333131;
+  padding: 10px 0;
 }
 
 @media (max-width: 900px) {
@@ -2239,6 +2241,14 @@ li {
 .foto__img {
   width: 20%;
   height: initial;
+}
+
+body {
+  background: #111;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .connexions {
