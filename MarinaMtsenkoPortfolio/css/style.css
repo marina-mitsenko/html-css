@@ -91,6 +91,12 @@ button:hover {
   }
 }
 
+@media (max-width: 500px) {
+  .offer__button {
+    width: 40%;
+  }
+}
+
 @media (max-width: 370px) {
   .offer__button {
     width: 50%;
@@ -1096,6 +1102,7 @@ button:hover {
     border: 1px solid yellow;
     -webkit-border-radius: 2em;
             border-radius: 2em;
+    margin-bottom: 20px;
   }
 }
 
