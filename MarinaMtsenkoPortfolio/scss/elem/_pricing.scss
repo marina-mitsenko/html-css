@@ -1,7 +1,11 @@
 .pricing {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/wall-1846841_640.jpg);
     
-    background: #d3d3d3;
-    padding: 0 50px;
     @media (max-width: 768px) {
         min-height: 480px;
     }
@@ -43,7 +47,7 @@
         margin-right: 20px;
         text-align: center;
         color: $secondColor;
-        background: white;
+        background: rgba($basicColor, 0.7) ;
         position: relative;
         border-radius: 5px;
         @media (max-width: 1099px) {

@@ -1,9 +1,10 @@
 .offer{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    @media (max-width: 850px) {
-        width: 106%;
-    }
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/dark-bg-min.jpg);    
     &__title {
         @include MediumTittel;
         margin: 50px auto;   
@@ -23,12 +24,12 @@
     &__block {
         min-width: 30%;
         margin-left: 30px;
-        background: $firstColor;
+        background: rgba($firstColor, 0.7) ;
         color: $basicColor;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        min-height: 535px;
+        min-height: 570px;
         border-radius: 0.5em;
         @media (max-width: 850px) {
             margin-left: 10px; 

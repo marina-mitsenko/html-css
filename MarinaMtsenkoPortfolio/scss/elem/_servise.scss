@@ -1,8 +1,10 @@
 
 .servise {
-    background: #d3d3d3;
-    padding: 0 50px;
-    
+    background-image: url(../img/white-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    margin: 0 auto;
     &__content {
         width: 80%;
         margin: 0 auto;

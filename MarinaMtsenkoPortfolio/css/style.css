@@ -194,7 +194,7 @@ button:hover {
 }
 
 .headerMain {
-  background-image: url(../img/bg-min.jpg);
+  background-image: url(../img/sea-3822020_1920-min.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -208,7 +208,7 @@ button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(22, 21, 22, 0.8);
+  background: rgba(22, 21, 22, 0.5);
 }
 
 .header {
@@ -939,8 +939,11 @@ button:hover {
 }
 
 .servise {
-  background: #d3d3d3;
-  padding: 0 50px;
+  background-image: url(../img/white-bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  margin: 0 auto;
 }
 
 .servise__content {
@@ -1485,14 +1488,13 @@ li {
 }
 
 .offer {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-}
-
-@media (max-width: 850px) {
-  .offer {
-    width: 106%;
-  }
+  padding: 20px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-image: url(../img/dark-bg-min.jpg);
 }
 
 .offer__title {
@@ -1570,7 +1572,7 @@ li {
 .offer__block {
   min-width: 30%;
   margin-left: 30px;
-  background: #333131;
+  background: rgba(51, 49, 49, 0.7);
   color: #f8f7f5;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1585,7 +1587,7 @@ li {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 535px;
+  min-height: 570px;
   -webkit-border-radius: 0.5em;
           border-radius: 0.5em;
 }
@@ -1710,8 +1712,13 @@ li {
 }
 
 .pricing {
-  background: #d3d3d3;
-  padding: 0 50px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-image: url(../img/wall-1846841_640.jpg);
 }
 
 @media (max-width: 768px) {
@@ -1852,7 +1859,7 @@ li {
   margin-right: 20px;
   text-align: center;
   color: #161516;
-  background: white;
+  background: rgba(248, 247, 245, 0.7);
   position: relative;
   -webkit-border-radius: 5px;
           border-radius: 5px;
