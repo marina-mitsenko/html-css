@@ -7,10 +7,54 @@ let write = doc.querySelector('.write');
 let call = doc.querySelector('.call');
 let rapport = doc.querySelector('.rapport');
 let formButton = doc.querySelector('.form__button');
-console.log(write);
+
+//form
+let formMain = doc.forms.main;
+let fieldName = formMain.name;
+let fieldEmail = formMain.email;
+let fieldNumber = formMain.number;
+let btnSendForm = formMain.send;
+
+fieldName.onblur = function(){
+    let value = this.value;
+    console.log('елемент потерял фокус');
+    fieldName.placeholder = "Давайте познайомимося!";
+    fieldName.classList.add('placeholderred');
+    if(value){
+            console.log('Ok');
+            fieldEmail.removeAttribute('disabled');
+    } 
+}
+fieldEmail.onblur = function(){
+    let value = this.value;
+    console.log('елемент потерял фокус');
+    fieldEmail.placeholder = "Напишіть свій email!";
+    fieldEmail.classList.add('placeholderred');
+    if(value){
+            console.log('Ok');
+            fieldNumber.removeAttribute('disabled');
+    } 
+}
+fieldNumber.onblur = function(){
+    let value = this.value;
+    console.log('елемент потерял фокус');
+    fieldNumber.placeholder = "Напишіть свій телефон!";
+    fieldNumber.classList.add('placeholderred');
+    if(value){
+            console.log('Ok');
+            btnSendForm.removeAttribute('disabled');
+    } 
+}
+
+
+
+console.log(btnSendForm);
+//чтоб кнопка для связи появилась через 10секунд
 let showWrite = setTimeout(function() {
     write.style.display="block";
   }, 10000);
+
+//чтоб кнопка для связи появилась через 5секунд
 let showCall = setTimeout(function() {
     call.style.display="block";
   }, 5000);
