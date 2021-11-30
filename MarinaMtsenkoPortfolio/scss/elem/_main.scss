@@ -71,6 +71,24 @@
         @include Light-Pointed-Text;
         margin-top: 50px;
         margin-bottom: 50px;
+        width: 50%;
+        position: relative;
+        &::before {
+            content: 'контакти';
+            text-transform: uppercase;
+            font-size: 40px;
+            color: transparent; /* прозрачный цвет букв */
+            -webkit-text-stroke: 0.5px rgba($accentColor, $alpha: 0.3) ;
+            position: absolute;
+            top: -30px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            @media (max-width: 500px) {
+                font-size: 30px;
+            }
+           
+        }
         
     }
     &__contact i {

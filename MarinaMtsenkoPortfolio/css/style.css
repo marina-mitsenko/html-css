@@ -104,6 +104,7 @@ button:hover {
 }
 
 .call {
+  display: none;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   width: 80px;
@@ -138,10 +139,15 @@ button:hover {
 }
 
 .write {
-  width: 425px;
+  display: none;
+  -webkit-border-top-left-radius: 2em;
+          border-top-left-radius: 2em;
+  width: 400px;
   height: 30px;
   border: none;
-  background: yellow;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgba(255, 255, 0, 0.4);
   position: fixed;
   top: 3%;
   right: 10%;
@@ -809,6 +815,8 @@ button:hover {
   padding: 10px 15px;
   margin-top: 50px;
   margin-bottom: 50px;
+  width: 50%;
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -832,6 +840,26 @@ button:hover {
 @media (max-width: 370px) {
   .development__contact {
     font-size: 14px;
+  }
+}
+
+.development__contact::before {
+  content: 'контакти';
+  text-transform: uppercase;
+  font-size: 40px;
+  color: transparent;
+  /* прозрачный цвет букв */
+  -webkit-text-stroke: 0.5px rgba(255, 255, 0, 0.3);
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .development__contact::before {
+    font-size: 30px;
   }
 }
 
@@ -1505,6 +1533,7 @@ li {
   text-transform: uppercase;
   padding-bottom: 10px;
   margin: 50px auto;
+  position: relative;
 }
 
 @media (max-width: 900px) {
@@ -1534,6 +1563,32 @@ li {
 @media (max-width: 600px) {
   .offer__title {
     margin: 20px auto;
+  }
+}
+
+.offer__title::before {
+  content: 'я можу';
+  text-transform: uppercase;
+  font-size: 50px;
+  color: transparent;
+  /* прозрачный цвет букв */
+  -webkit-text-stroke: 0.5px rgba(255, 255, 0, 0.3);
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .offer__title::before {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .offer__title::before {
+    font-size: 30px;
   }
 }
 
@@ -2179,6 +2234,8 @@ li {
   position: relative;
   background: #161516;
   color: #f8f7f5;
+  border-left: 0.5px solid #f8f7f5;
+  border-right: 0.5px solid #f8f7f5;
 }
 
 @media (max-width: 850px) {
@@ -2195,6 +2252,7 @@ li {
   text-transform: uppercase;
   background: #333131;
   padding: 10px 0;
+  position: relative;
 }
 
 @media (max-width: 900px) {
@@ -2212,6 +2270,32 @@ li {
 @media (max-width: 600px) {
   .hello__title {
     font-size: 16px;
+  }
+}
+
+.hello__title::before {
+  content: 'Marina Mitsenko';
+  text-transform: uppercase;
+  font-size: 50px;
+  color: transparent;
+  /* прозрачный цвет букв */
+  -webkit-text-stroke: 0.5px rgba(255, 255, 0, 0.3);
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .hello__title::before {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hello__title::before {
+    font-size: 30px;
   }
 }
 
