@@ -146,7 +146,7 @@ button:hover {
   display: none;
   -webkit-border-top-left-radius: 2em;
           border-top-left-radius: 2em;
-  width: 400px;
+  width: 480px;
   height: 30px;
   border: none;
   font-weight: bold;
@@ -1553,7 +1553,7 @@ li {
 }
 
 .form__close {
-  position: absolute;
+  position: relative;
   right: 3%;
   top: 1%;
   width: 32px;

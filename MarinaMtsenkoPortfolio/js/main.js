@@ -58,12 +58,12 @@ fieldNumber.onblur = function(){
 //чтоб кнопка для связи появилась через 10секунд
 let showWrite = setTimeout(function() {
     write.style.display="block";
-  }, 10000);
+  }, 15000);
 
 //чтоб кнопка для связи появилась через 5секунд
 let showCall = setTimeout(function() {
     call.style.display="block";
-  }, 5000);
+  }, 7000);
 close.onclick = function(){
     menu.style.zIndex="-1";
 }

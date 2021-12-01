@@ -108,18 +108,24 @@
                     </div>
 
                 </div>
-                <div class="rapport">
-                    <form class="form" action="#" method="GET">
-                        <h2 class="form__request">Заповни цю форму для зв'язку зі мною</h2>
+                <div class="communication">
+                    <form class="form" action="#" name="main" method="GET">
+                        <span class="form__close"></span>
+                        <h2 class="form__request">Надішли мені свої контакти і ми разом знайдемо найкращий варіант для твого сайту</h2>
                         <input class="form__input" type="text" name="name" placeholder="Ім'я">
-                        <input class="form__input" type="email" name="email" placeholder="Email Adress">
-                        <input class="form__input" type="number" name="number" placeholder="Телефонний номер">
-                        <input class="form__input" type="text" name="name" placeholder="Країна">
+                        <input class="form__input" type="email" name="email" placeholder="Email Adress" disabled>
+                        <input class="form__input" type="number" name="number" placeholder="Телефонний номер" disabled>
+                        <input class="form__input" type="text" name="country" placeholder="Країна">
                         <input class="form__input deals" type="text" name="deals" placeholder="Напиши, яким ти бачиш свій сайт">
-                        <button class="btn form__button" value="1111111111111" name="send" type="submit">Надіслати</button>
+                        <button class="btn form__button" value="1111111111111" name="send" type="submit" disabled>Надіслати</button>
                     </form>
                 </div>
             </div>
+            <button class="call">
+                <a href="tel:+380502208007" class="call__link">
+                    <i class="fas fa-phone-volume"></i>
+                </a>
+            </button>
             <button class="write">
                 <a href="#" class="write__link">
                     <p class="write__text">Напиши мені, який сайт ти хочеш</p>
