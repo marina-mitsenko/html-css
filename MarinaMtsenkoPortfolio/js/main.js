@@ -5,7 +5,6 @@ let menu = doc.querySelector('.menu');
 let toggle = doc.querySelector('.header__toggle-menu');
 let write = doc.querySelector('.write');
 let call = doc.querySelector('.call');
-let rapport = doc.querySelector('.rapport');
 let formButton = doc.querySelector('.form__button');
 
 //form
@@ -14,6 +13,15 @@ let fieldName = formMain.name;
 let fieldEmail = formMain.email;
 let fieldNumber = formMain.number;
 let btnSendForm = formMain.send;
+let FormClose = doc.querySelector('.form__close');
+let communication = doc.querySelector('.communication');
+
+// console.log(communication);
+//закрытие формы
+FormClose.onclick = function(){
+    communication.style.display = "none";
+    // console.log('clik');
+}
 
 fieldName.onblur = function(){
     let value = this.value;
@@ -46,9 +54,7 @@ fieldNumber.onblur = function(){
     } 
 }
 
-
-
-console.log(btnSendForm);
+// console.log(btnSendForm);
 //чтоб кнопка для связи появилась через 10секунд
 let showWrite = setTimeout(function() {
     write.style.display="block";
@@ -66,12 +72,12 @@ toggle.onclick = function(){
     menu.style.zIndex="1";
 }
 write.onclick = function(){
-    rapport.style.display="block";
+    communication.style.display="block";
     write.style.display="none";
 }
 formButton.onclick = function(){
     // console.log('clik');
-    rapport.style.display="none";
+    communication.style.display="none";
     write.style.display="block";
     write.innerHTML = `<a href="#" class="write__link">
     <p class="write__text">Я обов'язково звяжусь з Вами!</p>
